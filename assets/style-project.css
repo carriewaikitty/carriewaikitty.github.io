@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFE7; /* Light background for content */
+    color: #213555; /* Dark text color for high contrast */
+    line-height: 1.6;
+}
+
+/* Header Styling (Category Title) */
+header {
+    background-color: #3E5879; /* Dark blue background for header */
+    color: #F9F9F9; /* Off-white text color */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Back Link in Header */
+nav a.back-link {
+    color: #F9F9F9;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1rem;
+    display: inline-block;
+}
+
+/* Section A */
+.section-a {
+    background-color: #F5EFE7; /* Light background for Section A */
+    padding: 3rem 2rem;
+}
+
+.section-a .section-divider-a {
+    background-image: url('path/to/wavy-divider-a.svg'); /* Wavy Divider A */
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Section B */
+.section-b {
+    background-color: #D8C4B6; /* Beige background for Section B */
+    padding: 3rem 2rem;
+}
+
+.section-b .section-divider-b {
+    background-image: url('path/to/wavy-divider-b.svg'); /* Wavy Divider B */
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Project Category (Container for the content) */
+.project-category {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-item {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Project Description Styling */
+.project-description {
+    max-width: 50%;
+}
+
+.project-description h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-description p {
+    font-size: 1.1rem;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    gap: 1rem;
+}
+
+.image-placeholder {
+    width: 22%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-placeholder:hover {
+    transform: scale(1.05);
+}
+
+
+/* Demo Video Section Styling */
+.video-demo {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.video-demo h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #213555;
+}
+
+/* Demo Video Section Styling */
+.video-demo {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.video-demo h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #213555;
+}
+
+/* Video Container Styling */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+}
+
+/* Aspect Ratio 16:9 */
+.video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625, or 56.25%) */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Section Divider (using background color) */
+.section-divider {
+    height: 2px;
+    background-color: #D8C4B6; /* Beige color for divider */
+    margin-top: 3rem;
+}
+
+/* Responsive Design - Make sure the layout is mobile-friendly */
+@media screen and (max-width: 768px) {
+    .video-container {
+        max-width: 100%; /* Make video container full width on smaller screens */
+    }
+
+    .video-container iframe {
+        height: 250px; /* Adjust video height for mobile */
+    }
+}
+
+
+
+
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3E5879; /* Matching header background color */
+    color: #F9F9F9; /* Off-white text color */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .project-description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-gallery {
+        justify-content: center;
+    }
+
+    .image-placeholder {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-placeholder {
+        width: 100%;
+    }
+}

@@ -1,0 +1,257 @@
+/* General Reset: Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5EFE7; /* Light background color */
+    color: #213555; /* Dark text color */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #3E5879; /* Updated header background to contrast with the dark blue theme */
+    color: #F5EFE7; /* Light text color for visibility */
+    padding: 0.5rem 0; /* Reduced padding to make the header less bulky */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #F5EFE7; /* Light text color for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: #D8C4B6; /* Beige color on hover for better interaction */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #213555; /* Dark blue for hero section background */
+    color: #F5EFE7; /* Off-white color for text to stand out */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Wavy Divider for Hero Section */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('wave.svg') repeat-x; /* Add wave SVG as a bottom divider */
+}
+
+/* About Me Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #F9F9F9; /* Off-white background for the About Me section */
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 800px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Wavy Divider for About Section */
+.about::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('wave.svg') repeat-x; /* Add wave SVG here as divider */
+}
+
+/* My Projects Section */
+.projects {
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    width: 100%;
+}
+
+/* Project Section Title */
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Project Cards Container */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust to auto-fit to avoid extra columns */
+    gap: 2rem;
+    justify-items: center; /* Ensures each card is centered within its grid cell */
+    justify-content: center; /* Centers the entire grid */
+    align-content: center; /* Aligns the content vertically (if necessary) */
+    width: 100%; /* Ensures the grid spans the container's width */
+    max-width: 1100px; /* Prevents excessive width on large screens */
+    margin: 0 auto; /* Centers the grid container horizontally */
+}
+
+
+/* Individual Project Card */
+.project-card {
+    background-color: #F9F9F9; /* Off-white background for the project card */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center; /* Centers the text inside each card */
+    width: 100%; /* Ensures cards are responsive */
+}
+
+/* Project Card Title */
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Project Card Description */
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Allows the description to expand and fill available space */
+}
+
+/* Project Card Button */
+.project-card a {
+    display: inline-block;
+    background-color: #B51B75; /* Accent color for buttons */
+    color: #F9F9F9; /* Off-white color for the button text */
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners for the button */
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: auto; /* Moves the button to the bottom of the card */
+}
+
+/* Project Card Button Hover Effect */
+.project-card a:hover {
+    background-color: #9A1460; /* Darker pink color for the hover effect */
+}
+
+
+/* Wavy Divider for Projects Section */
+.projects::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('wave.svg') repeat-x; /* Add wave SVG as a divider for the projects section */
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #213555; /* Dark blue background for the contact section */
+    color: #F9F9F9; /* Off-white color for text */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Contact Info Section */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #D8C4B6; /* Beige color for links in the contact section */
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0; /* Reduced padding for a more compact footer */
+    background-color: #F9F9F9; /* Lighter background for footer */
+    color: #213555; /* Dark text color to contrast with light footer background */
+}
+
+footer p {
+    font-size: 1.2rem;
+}

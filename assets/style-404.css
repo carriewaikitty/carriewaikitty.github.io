@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes up at least the full height of the viewport */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFE7; /* Light background for content */
+    color: #213555; /* Dark text color for high contrast */
+    line-height: 1.6;
+}
+
+/* Header Styling (404 Page Title) */
+header {
+    background-color: #3E5879; /* Dark blue background for header */
+    color: #F9F9F9; /* Off-white text color */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* 404 Content Section Styling */
+.not-found {
+    padding: 4rem 2rem;
+    text-align: center;
+    flex-grow: 1; /* Ensures content can grow and push footer down */
+}
+
+.not-found h2 {
+    font-size: 2rem;
+    color: #213555;
+    margin-bottom: 1rem;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333333; /* Dark text for description */
+}
+
+/* Image Placeholder Styling */
+.not-found-image {
+    margin: 3rem 0;
+}
+
+.not-found-image img {
+    width: 300px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image */
+}
+
+/* Button Styling */
+.back-home-button {
+    display: inline-block;
+    background-color: #D8C4B6; /* Beige background for button */
+    color: #213555;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: #3E5879; /* Dark blue hover state */
+    color: #F9F9F9; /* Change text color on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Wavy Divider */
+.wavy-divider-a {
+    background-image: url('path-to-your-wave-image.png'); /* Use a custom wave image */
+    background-size: cover;
+    height: 30px; /* Adjust the height of the wavy divider */
+    width: 100%;
+    margin: 0; /* Remove margin to prevent extra space */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3E5879; /* Matching header background color */
+    color: #F9F9F9; /* Off-white text color */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .not-found h2 {
+        font-size: 1.8rem; /* Slightly smaller heading on mobile */
+    }
+
+    .not-found p {
+        font-size: 1rem;
+    }
+
+    .back-home-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .not-found-image img {
+        width: 250px; /* Make image smaller for mobile screens */
+    }
+
+    /* Wavy Divider adjustments for small screens */
+    .wavy-divider-a {
+        height: 50px; /* Adjust wave height on smaller screens */
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Category</title>
+    <link rel="stylesheet" href="assets/style-project.css"> <!-- Link to external CSS file -->
+    <script src="assets/script-project.js" defer></script> <!-- Link to external JS file for image enlarge functionality -->
+</head>
+<body>
+    <!-- Placeholder link to go back to the main index page -->
+    <header>
+        <nav>
+            <a href="index.html" class="back-link">Back to Main Portfolio</a>
+        </nav>
+        <h1>eLearning Projects</h1>
+    </header>
+
+    <!-- Section A -->
+    <section class="section-a">
+        <div class="project-category">
+            <div class="project-item">
+                <div class="project-description">
+                    <h3>Interactive Learning Module</h3>
+                    <p>This project showcases an interactive eLearning module designed to engage users with quizzes, videos, and learning assessments. The goal was to create a comprehensive learning experience that can be scaled across various educational topics.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-placeholder" tabindex="0" aria-label="Image 1 of 4" role="img" onclick="openModal('image1')">
+                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 1" class="image-item" id="image1">
+                    </div>
+                    <div class="image-placeholder" tabindex="0" aria-label="Image 2 of 4" role="img" onclick="openModal('image2')">
+                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 2" class="image-item" id="image2">
+                    </div>
+                    <div class="image-placeholder" tabindex="0" aria-label="Image 3 of 4" role="img" onclick="openModal('image3')">
+                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 3" class="image-item" id="image3">
+                    </div>
+                </div>
+				
+				<!-- Demo Video Embed -->
+				<div class="video-demo">
+					<h4>Watch the Project Demo</h4>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				
+				
+				
+            </div>
+        </div>
+        <div class="section-divider-a"></div> <!-- Wavy Divider A -->
+    </section>
+
+    <!-- Section B -->
+    <section class="section-b">
+        <div class="project-category">
+            <div class="project-item">
+                <div class="project-description">
+                    <h3>Visual Design Portfolio</h3>
+                    <p>This section displays my visual design projects, focusing on clean and modern layouts and responsive design.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-placeholder" tabindex="0" aria-label="Image 1 of 4" role="img" onclick="openModal('image4')">
+                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 1" class="image-item" id="image4">
+                    </div>
+                    <div class="image-placeholder" tabindex="0" aria-label="Image 2 of 4" role="img" onclick="openModal('image5')">
+                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 2" class="image-item" id="image5">
+                    </div>
+                    <div class="image-placeholder" tabindex="0" aria-label="Image 3 of 4" role="img" onclick="openModal('image6')">
+                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 3" class="image-item" id="image6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider-b"></div> <!-- Wavy Divider B -->
+    </section>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img id="modal-image" class="modal-image" src="" alt="Enlarged image">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Design Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

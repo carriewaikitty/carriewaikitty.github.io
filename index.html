@@ -3,183 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of a designer with a focus on minimalist and modern aesthetics. Fully accessible and WCAG-compliant.">
-    <title>Portfolio</title>
-    <style>
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 0 1rem;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Header */
-        header {
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            color: #222;
-        }
-
-        header p {
-            margin-top: 0.5rem;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Navigation */
-        nav {
-            margin-top: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        nav ul li {
-            font-size: 1rem;
-        }
-
-        nav ul li a {
-            padding: 0.5rem 1rem;
-            border: 1px solid transparent;
-            border-radius: 5px;
-            transition: all 0.2s;
-        }
-
-        nav ul li a:focus,
-        nav ul li a:hover {
-            border-color: #007bff;
-            background-color: #e9ecef;
-        }
-
-        /* Main Content */
-        main {
-            margin: 2rem auto;
-            max-width: 800px;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        section h2 {
-            font-size: 1.5rem;
-            color: #444;
-            margin-bottom: 1rem;
-        }
-
-        .project {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-            transition: transform 0.2s;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-        }
-
-        .project h3 {
-            font-size: 1.25rem;
-            color: #222;
-        }
-
-        .project p {
-            margin-top: 0.5rem;
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            font-size: 0.875rem;
-            color: #555;
-            border-top: 1px solid #ddd;
-            margin-top: 2rem;
-        }
-
-        footer a {
-            color: #007bff;
-        }
-
-        footer a:focus,
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Accessibility Helpers */
-        :focus {
-            outline: 2px solid #007bff;
-            outline-offset: 2px;
-        }
-    </style>
+    <title>My Design Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
-        <h1>My Design Portfolio</h1>
-        <p>Minimalist, modern, and accessible design showcasing my work.</p>
-        <nav aria-label="Main navigation">
+        <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate designer specializing in modern, user-centric designs. My work reflects simplicity, functionality, and elegance.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <article class="project">
-                <h3>Project Title 1</h3>
-                <p>A brief description of the project, highlighting its purpose and design features.</p>
-            </article>
-            <article class="project">
-                <h3>Project Title 2</h3>
-                <p>A brief description of the project, highlighting its purpose and design features.</p>
-            </article>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you’d like to collaborate or learn more about my work, feel free to <a href="mailto:example@example.com">email me</a>.</p>
-        </section>
-    </main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Welcome to My Design Portfolio</h1>
+        <p>Explore my work in eLearning, Accessibility, Graphic Design, and Multimedia Design.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate UX/UI designer with a knack for crafting intuitive, user-centered digital experiences. Whether it's designing accessible web interfaces, building eLearning platforms, or creating multimedia content, I thrive on bringing creative solutions to life. I’m dedicated to continuous learning and improving my design skills, while ensuring my work is inclusive and effective for all users.</p>
+                <p>With a background in graphic design and a deep understanding of accessibility standards, I focus on making digital spaces better for everyone.</p>
+            </div>
+            <div class="about-image">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- My Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <h3>eLearning Projects</h3>
+                <p>A user-friendly eLearning platform designed for accessibility and ease of use.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Accessibility Design</h3>
+                <p>Revamping an existing web platform to make it more accessible to all users.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Visual Design</h3>
+                <p>Showcasing various branding and logo design projects.</p>
+                <a href="#">View Project</a>
+            </div>
+            
+
+			
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+ <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+            <p>If you'd like to work with me or have any questions, feel free to reach out!</p>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+    </div>
+</section>
+
     <footer>
-        <p>&copy; 2024 My Portfolio | <a href="#">Accessibility Statement</a></p>
+        <p>© 2024 My Design Portfolio</p>
     </footer>
 </body>
 </html>
