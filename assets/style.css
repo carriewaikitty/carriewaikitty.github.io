@@ -74,6 +74,7 @@ header nav a:hover {
     position: relative;
 }
 
+/*
 .about-container {
     display: flex;
     align-items: center;
@@ -82,6 +83,18 @@ header nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
+*/
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows wrapping when there's not enough space */
+}
+
+
 
 .about-text {
     flex: 1;
@@ -120,13 +133,59 @@ header nav a:hover {
 /* My Projects Section */
 .projects {
     padding: 3rem 2rem;
-    text-align: center;
+    text-align: left;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers the content horizontally */
     width: 100%;
 }
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*
+.projects-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;  Allows wrapping when the screen is narrow 
+    text-align: center;  Centers the text content on smaller screens 
+}
+
+*/
+.projects-text {
+    flex: 1;
+    max-width: 400px;
+	align-self: flex-start; /* Aligns this specific container to the top */
+	
+}
+
+.projects-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+	
+}
+
+.projects-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+	
+}
+
+
+
 
 /* Project Section Title */
 .projects h2 {
@@ -143,7 +202,7 @@ header nav a:hover {
     justify-content: center; /* Centers the entire grid */
     align-content: center; /* Aligns the content vertically (if necessary) */
     width: 100%; /* Ensures the grid spans the container's width */
-    max-width: 1100px; /* Prevents excessive width on large screens */
+    max-width: 700px; /* Prevents excessive width on large screens */
     margin: 0 auto; /* Centers the grid container horizontally */
 }
 
@@ -194,6 +253,17 @@ header nav a:hover {
 }
 
 
+/* Project Card Image */
+.project-card img {
+    width: 100%; /* Ensures the image takes up full width of the card */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 12px; /* Optional: rounds the corners of the image to match the card */
+    object-fit: cover; /* Ensures the image fills the area, cropping if necessary */
+    margin-bottom: 1.5rem; /* Adds space between the image and the text */
+}
+
+
+
 /* Wavy Divider for Projects Section */
 .projects::after {
     content: "";
@@ -204,6 +274,43 @@ header nav a:hover {
     height: 50px;
     background: url('wave.svg') repeat-x; /* Add wave SVG as a divider for the projects section */
 }
+
+/* Media Queries for Narrow Screens (Mobile) */
+@media (max-width: 768px) {
+    .about-container,
+	.projects-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .project-cards {
+        grid-template-columns: 1fr; /* Ensures cards are stacked vertically in one column */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-cards {
+        grid-template-columns: 1fr; /* For very narrow screens, stack in a single column */
+    }
+
+    /* Adjustments to card content for mobile */
+    .project-card h3 {
+        font-size: 1.5rem; /* Reduce title font size */
+    }
+
+    .project-card p {
+        font-size: 0.9rem; /* Adjust description text size */
+    }
+
+    .project-card a {
+        padding: 0.8rem 1.5rem; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}
+
+
+
+
+
 
 /* Contact Section */
 .contact {
