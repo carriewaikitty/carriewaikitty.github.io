@@ -1,3 +1,19 @@
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+// <width>: Use a value from 62.5 to 100
+*/
+
+.noto-sans-<uniquifier> {
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" <width>;
+}
+
+
+
 /* General Reset: Reset margin and padding for all elements */
 * {
     margin: 0;
@@ -6,7 +22,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    
+	font-family: Noto Sans, serif;
+	
+	/*font-family: Arial, sans-serif;   */
     background-color: #F5EFE7; /* Light background color */
     color: #213555; /* Dark text color */
     line-height: 1.6;
@@ -14,10 +33,10 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #213555; /* Original background color */
-    color: #FFFFFF; /* Pure white text */
-    padding: 0.5rem 0; /* Retained padding */
-    position: relative; /* So we can place the circle on the top-right */
+    background-color: #f9f9f9; /* Original background color */
+    color: #213555; /* dark blue  text */
+    padding: 2rem 0; /* Retained padding 2rem is at the top*/
+    position: relative; /* make it possible to place the circle on the top-right */
 }
 
 header nav ul {
@@ -25,20 +44,20 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 0;
+    margin: 10;
 }
 
 header nav a {
-    color: #FFFFFF; /* Pure white text */
+    color: #213555; /* dark blue text */
     text-decoration: none;
-    font-weight: 300; /* Lighter font weight */
-    font-size: 1.2rem;
+    font-weight: 700; /* font weight---300 is light */
+    font-size: 1.1rem;
     position: relative; /* For positioning the hover circle */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 header nav a:hover {
-    color: #D8C4B6; /* Beige color on hover for better interaction */
+    color: #B51B75; /* dark pink on hover for better interaction */
     transform: scale(1.1); /* Slight scaling effect */
 }
 
@@ -46,11 +65,11 @@ header nav a:hover {
 header nav a::after {
     content: "";
     position: absolute;
-    top: -5px; /* Position it just above the link */
-    right: -5px; /* Position it to the right of the link */
-    width: 8px; /* Size of the circle */
-    height: 8px;
-    background-color: #D8C4B6; /* Beige color for the circle */
+    top: -7px; /* Position it just above the link */
+    right: -7px; /* Position it to the right of the link */
+    width: 7px; /* Size of the circle */
+    height: 7px;
+    background-color: #B51B75; /* dark pink color for the circle */
     border-radius: 50%; /* Makes it round */
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -279,7 +298,7 @@ header nav a:hover::after {
 .project-card a {
     display: inline-block;
     background-color: #B51B75; /* Accent color for buttons */
-    color: #F9F9F9; /* Off-white color for the button text */
+    color: #FFFFFF; /* Off-white color for the button text */
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 30px; /* Rounded corners for the button */

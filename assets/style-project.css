@@ -8,7 +8,9 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Noto Sans, serif;
+	
+	/*font-family: Arial, sans-serif;  */
     margin: 0;
     padding: 0;
     background-color: #F5EFE7; /* Light background for content */
@@ -19,7 +21,7 @@ body {
 /* Header Styling (Category Title) */
 /* Header Styling */
 header {
-    background-color: #3E5879; /* Dark blue background for header */
+    background-color: #213555; /* Dark blue background for header */
     color: #FFFFFF; /* White text color */
     padding: 2rem 2rem; /* Add padding to give space around elements */
     display: flex; /* Using flexbox */
@@ -37,14 +39,14 @@ header nav ul {
     justify-content: center; /* Center the navigation links */
     gap: 2rem;
     margin: 0;
-    padding-bottom: 1rem; /* Space between nav and title */
+    padding-bottom: 5rem; /* Space between nav and title */
 }
 
 header nav a {
     color: #FFFFFF; /* White text color for links */
     text-decoration: none;
-    font-weight: 300; /* Lighter font weight */
-    font-size: 1.2rem;
+    font-weight: 700; /* Lighter font weight */
+    font-size: 1.1rem;
     position: relative; /* For positioning the hover circle */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
@@ -58,10 +60,10 @@ header nav a:hover {
 header nav a::after {
     content: "";
     position: absolute;
-    top: -5px; /* Position it just above the link */
-    right: -5px; /* Position it to the right of the link */
-    width: 8px; /* Size of the circle */
-    height: 8px;
+    top: -7px; /* Position it just above the link */
+    right: -7px; /* Position it to the right of the link */
+    width: 7px; /* Size of the circle */
+    height: 7px;
     background-color: #D8C4B6; /* Beige color for the circle */
     border-radius: 50%; /* Makes it round */
     opacity: 0;
@@ -72,13 +74,34 @@ header nav a:hover::after {
     opacity: 1; /* Circle becomes visible on hover */
 }
 
-/* Centering the eLearning Projects Title */
-header h1 {
-    font-size: 3rem; /* Adjust size of the title */
-    font-weight: bold; /* Make the title stand out */
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Ensure text is centered */
-    color: #FFFFFF; /* White text for the title */
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 2rem;
+    background-color: #213555; /* Dark blue for hero section background */
+    color: #F5EFE7; /* Off-white color for text to stand out */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Wavy Divider for Hero Section */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('wave.svg') repeat-x; /* Add wave SVG as a bottom divider */
 }
 
 
@@ -86,7 +109,7 @@ header h1 {
 
 /* Section A */
 .section-a {
-    background-color: #F5EFE7; /* Light background for Section A */
+    background-color: #f9f9f9; /* Light grey background for Section A */
     padding: 3rem 2rem;
 }
 
@@ -100,7 +123,7 @@ header h1 {
 
 /* Section B */
 .section-b {
-    background-color: #D8C4B6; /* Beige background for Section B */
+    background-color: #F5EFE7; /* Light Beige background for Section B */
     padding: 3rem 2rem;
 }
 
@@ -112,116 +135,194 @@ header h1 {
     margin-top: 2rem;
 }
 
-/* Project Category (Container for the content) */
+/*New stuff here */
+
+
+/* Project Category Styles */
 .project-category {
     max-width: 1200px;
-    margin: 0 auto; 
-	align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+
+/* Project Item Container */
 .project-item {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-
+    align-items: flex-start;
+	max-width: 1200px;
 }
 
-/* Project Description Styling */
-.project-description {
-    max-width: 80%;
+
+/* Left Content: Project Info */
+.project-info {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+	
 }
 
-.project-description h3 {
+.project-info h3 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.project-description p {
-    font-size: 1.1rem;
-}
-
-/* Image Gallery Styling */
-.image-gallery {
-    display: flex;
-    gap: 1rem;
-
-}
-
-.image-placeholder {
-    width: 20%;
-    height: 100%; /* You can set a height for your image container */
-    overflow: hidden;
-    border-radius: 50px; /* Ensure the container has rounded corners */
-    transition: transform 0.3s ease;
-    cursor: zoom-in;
-}
-
-.image-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image fills the container */
-    object-position: center; /* Center the image */
-    border-radius: 50px; /* Apply the same border-radius to the image */
-}
-
-
-.image-placeholder:hover {
-    transform: scale(1.05);
-}
-
-
-/* Demo Video Section Styling */
-.video-demo {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-.video-demo h4 {
+.project-info p {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #213555;
 }
 
-/* Demo Video Section Styling */
-.video-demo {
-    margin-top: 3rem;
-    text-align: center;
+/*Role and tools section */
+.project-details {
+    list-style-type: disc; /* Display bullet points as dots */
+    padding-left: 1rem; /* Add padding to align text properly with dots */
+    margin: 0;
 }
 
-.video-demo h4 {
+.project-details li {
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #213555;
-}
-
-/* Video Container Styling */
-.video-container {
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    color: #333; /* Default text color */
 }
 
-/* Aspect Ratio 16:9 */
-.video-container::before {
-    content: "";
-    display: block;
-    padding-top: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625, or 56.25%) */
+/* Customize the bullet color */
+.project-details li::marker {
+    color: #B51B75; /* Change the bullet color */
+	font-size: 1.5rem;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
+
+.project-details span {
+   /* color: #D8C4B6; /* Add a colorful highlight for roles and tools */
+    font-weight: bold;
 }
+
+/* Right Content: Project Image */
+.project-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+  
+
+/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    */
+}
+
+/* Detailed Text Placeholder right below the project title and image */
+.project-detail-text {
+	
+/*	
+    text-align: left;
+    margin: 2rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+*/	
+	padding: 3rem 0rem 2rem;
+    font-size: 1rem;
+    color: #333;
+	
+}
+
+.project-detail-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Additional Images */
+.additional-images {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start; /* Align to the left */
+    margin-bottom: 2rem;
+}
+
+
+.additional-images .image-placeholder {
+    width: calc(50% - 0.5rem); /* Keep the width flexible */
+	aspect-ratio: 16 / 9; /* Adjust this ratio as needed */
+    overflow: hidden; /* Ensures content respects border-radius */
+    border-radius: 10px; /* Apply rounded corners */
+    cursor: zoom-in;
+	
+	    
+	/*comment out below if ohter image shows issues*/	
+	display: flex; /* Align content if needed */
+    align-items: center;
+    justify-content: center;
+	
+	
+}
+
+.additional-images .image-placeholder img {
+    width: 100%; /* Ensure image scales to container width */
+    height: auto; /* Maintain the image's natural aspect ratio */
+    object-fit: cover; /* Ensure the image fits within the container */
+    display: block; /* Remove extra space caused by inline elements */
+    transition: transform 0.3s ease; /* Add hover zoom-in effect */
+}
+
+.additional-images .image-placeholder:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+/* Additional Text Placeholder */
+.project-additional-text {
+ /*
+    text-align: left;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+	*/
+	background-color: #F9F9F9;
+    padding: 0rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #444;
+	
+}
+
+.project-additional-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+	
+}
+
+/* Button Placeholder Styling */
+.button-placeholder {
+    display: flex; /* Center align the button */
+    justify-content: flex-start; /* Align it to the left of the container */
+    margin: 1rem 0; /* Add spacing around the button */
+}
+
+/* Button Styling */
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff; /* Text color */
+    background-color: #B51B75; /* Button background color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Hover effect */
+}
+
+.project-button:hover {
+    background-color: #9A1460; /* Darker shade for hover */
+}
+
+
+
+
 
 /* Section Divider (using background color) */
 .section-divider {
@@ -230,16 +331,7 @@ header h1 {
     margin-top: 3rem;
 }
 
-/* Responsive Design - Make sure the layout is mobile-friendly */
-@media screen and (max-width: 768px) {
-    .video-container {
-        max-width: 100%; /* Make video container full width on smaller screens */
-    }
 
-    .video-container iframe {
-        height: 250px; /* Adjust video height for mobile */
-    }
-}
 
 
 
@@ -286,24 +378,25 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive Design */
+
+
+
+/* Responsive Design Adjustments */
 @media screen and (max-width: 768px) {
-    .project-description {
-        max-width: 100%;
-        text-align: left;
+    .project-item {
+        flex-direction: column;
     }
 
-    .image-gallery {
-        justify-content: center;
+    .additional-images {
+        flex-direction: column;
     }
 
-    .image-placeholder {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .image-placeholder {
+    .additional-images .image-placeholder {
         width: 100%;
+
+		
     }
 }
+
+
+
