@@ -79,7 +79,7 @@ header nav a:hover::after {
     text-align: center;
     padding: 2rem 2rem;
     background-color: #213555; /* Dark blue for hero section background */
-    color: #F5EFE7; /* Off-white color for text to stand out */
+    color: #F9f9f9; /* Off-white color for text to stand out */
     position: relative;
 }
 
@@ -166,13 +166,13 @@ header nav a:hover::after {
 	
 }
 
-.project-info h3 {
+.project-info h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .project-info p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -185,7 +185,7 @@ header nav a:hover::after {
 
 .project-details li {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: relative;
     color: #333; /* Default text color */
 }
@@ -193,7 +193,7 @@ header nav a:hover::after {
 /* Customize the bullet color */
 .project-details li::marker {
     color: #B51B75; /* Change the bullet color */
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 
@@ -224,7 +224,7 @@ header nav a:hover::after {
     margin-right: auto;
 */	
 	padding: 3rem 0rem 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
 	
 }
@@ -285,7 +285,7 @@ header nav a:hover::after {
 	background-color: #F9F9F9;
     padding: 0rem;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #444;
 	
 }
@@ -371,11 +371,15 @@ header nav a:hover::after {
 
 /* Footer Styling */
 footer {
-    background-color: #3E5879; /* Matching header background color */
-    color: #F9F9F9; /* Off-white text color */
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 0.5rem; /* Reduced padding for a more compact footer */
+    background-color: #3E5879; /* Theme blue background for footer */
+    color: #f9f9f9; /* Dark text color to contrast with light footer background */
+}
+
+footer p {
+    font-size: 0.9rem;
+	font-weight: bold;
 }
 
 
@@ -397,6 +401,3 @@ footer {
 		
     }
 }
-
-
-

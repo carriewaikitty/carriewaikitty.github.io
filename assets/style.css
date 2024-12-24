@@ -118,16 +118,7 @@ header nav a:hover::after {
 	padding-bottom: 200px;
 }
 
-/*
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-*/
+
 .about-container {
     display: flex;
     align-items: center;
@@ -144,6 +135,13 @@ header nav a:hover::after {
     flex: 1;
     max-width: 700px;
 }
+
+.about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
 
 .about-text h2 {
     font-size: 2.5rem;
@@ -203,6 +201,7 @@ header nav a:hover::after {
     flex-direction: column;
     align-items: center; /* Centers the content horizontally */
     width: 100%;
+	
 }
 
 .projects-container {
@@ -287,13 +286,13 @@ header nav a:hover::after {
 
 /* Project Card Title */
 .project-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
 /* Project Card Description */
 .project-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
     flex-grow: 1; /* Allows the description to expand and fill available space */
 }
@@ -306,7 +305,7 @@ header nav a:hover::after {
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 30px; /* Rounded corners for the button */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: auto; /* Moves the button to the bottom of the card */
 }
@@ -324,6 +323,7 @@ header nav a:hover::after {
     border-radius: 12px; /* Optional: rounds the corners of the image to match the card */
     object-fit: cover; /* Ensures the image fills the area, cropping if necessary */
     margin-bottom: 1.5rem; /* Adds space between the image and the text */
+	
 }
 
 
@@ -402,7 +402,7 @@ header nav a:hover::after {
 
 .contact-info {
     flex: 1;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .contact-info p {
@@ -418,11 +418,12 @@ header nav a:hover::after {
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 1rem 0; /* Reduced padding for a more compact footer */
-    background-color: #F9F9F9; /* Lighter background for footer */
-    color: #213555; /* Dark text color to contrast with light footer background */
+    padding: 0.5rem; /* Reduced padding for a more compact footer */
+    background-color: #3E5879; /* Theme blue background for footer */
+    color: #f9f9f9; /* Dark text color to contrast with light footer background */
 }
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+	font-weight: bold;
 }
