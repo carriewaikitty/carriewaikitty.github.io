@@ -1,4 +1,12 @@
 /* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,21 +17,72 @@ body {
 }
 
 /* Header Styling (Category Title) */
+/* Header Styling */
 header {
     background-color: #3E5879; /* Dark blue background for header */
-    color: #F9F9F9; /* Off-white text color */
-    text-align: center;
-    padding: 1rem 0;
+    color: #FFFFFF; /* White text color */
+    padding: 2rem 2rem; /* Add padding to give space around elements */
+    display: flex; /* Using flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text inside */
+    position: relative; /* So we can position elements correctly */
 }
 
-/* Back Link in Header */
-nav a.back-link {
-    color: #F9F9F9;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 1rem;
-    display: inline-block;
+/* Navigation Styles */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 2rem;
+    margin: 0;
+    padding-bottom: 1rem; /* Space between nav and title */
 }
+
+header nav a {
+    color: #FFFFFF; /* White text color for links */
+    text-decoration: none;
+    font-weight: 300; /* Lighter font weight */
+    font-size: 1.2rem;
+    position: relative; /* For positioning the hover circle */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+header nav a:hover {
+    color: #D8C4B6; /* Beige color on hover */
+    transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Hover Circle Effect */
+header nav a::after {
+    content: "";
+    position: absolute;
+    top: -5px; /* Position it just above the link */
+    right: -5px; /* Position it to the right of the link */
+    width: 8px; /* Size of the circle */
+    height: 8px;
+    background-color: #D8C4B6; /* Beige color for the circle */
+    border-radius: 50%; /* Makes it round */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+header nav a:hover::after {
+    opacity: 1; /* Circle becomes visible on hover */
+}
+
+/* Centering the eLearning Projects Title */
+header h1 {
+    font-size: 3rem; /* Adjust size of the title */
+    font-weight: bold; /* Make the title stand out */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Ensure text is centered */
+    color: #FFFFFF; /* White text for the title */
+}
+
+
+
 
 /* Section A */
 .section-a {
@@ -56,18 +115,21 @@ nav a.back-link {
 /* Project Category (Container for the content) */
 .project-category {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; 
+	align-items: center;
+    justify-content: center;
 }
 
 .project-item {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+
 }
 
 /* Project Description Styling */
 .project-description {
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .project-description h3 {
@@ -83,21 +145,26 @@ nav a.back-link {
 .image-gallery {
     display: flex;
     gap: 1rem;
+
 }
 
 .image-placeholder {
-    width: 22%;
+    width: 20%;
+    height: 100%; /* You can set a height for your image container */
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 50px; /* Ensure the container has rounded corners */
     transition: transform 0.3s ease;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .image-placeholder img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container */
+    object-position: center; /* Center the image */
+    border-radius: 50px; /* Apply the same border-radius to the image */
 }
+
 
 .image-placeholder:hover {
     transform: scale(1.05);
@@ -190,6 +257,7 @@ nav a.back-link {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+	cursor: zoom-out;
 }
 
 .modal-image {
@@ -197,6 +265,7 @@ nav a.back-link {
     max-height: 80%;
     border-radius: 10px;
     object-fit: contain;
+	cursor: zoom-out;
 }
 
 .modal-close {
@@ -221,7 +290,7 @@ footer {
 @media screen and (max-width: 768px) {
     .project-description {
         max-width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .image-gallery {

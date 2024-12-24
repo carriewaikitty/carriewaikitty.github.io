@@ -14,9 +14,10 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #3E5879; /* Updated header background to contrast with the dark blue theme */
-    color: #F5EFE7; /* Light text color for visibility */
-    padding: 0.5rem 0; /* Reduced padding to make the header less bulky */
+    background-color: #213555; /* Original background color */
+    color: #FFFFFF; /* Pure white text */
+    padding: 0.5rem 0; /* Retained padding */
+    position: relative; /* So we can place the circle on the top-right */
 }
 
 header nav ul {
@@ -24,17 +25,39 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin: 0;
 }
 
 header nav a {
-    color: #F5EFE7; /* Light text color for links */
+    color: #FFFFFF; /* Pure white text */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 300; /* Lighter font weight */
     font-size: 1.2rem;
+    position: relative; /* For positioning the hover circle */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 header nav a:hover {
     color: #D8C4B6; /* Beige color on hover for better interaction */
+    transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Hover Circle Effect (top-right corner of the header) */
+header nav a::after {
+    content: "";
+    position: absolute;
+    top: -5px; /* Position it just above the link */
+    right: -5px; /* Position it to the right of the link */
+    width: 8px; /* Size of the circle */
+    height: 8px;
+    background-color: #D8C4B6; /* Beige color for the circle */
+    border-radius: 50%; /* Makes it round */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+header nav a:hover::after {
+    opacity: 1; /* Circle becomes visible on hover */
 }
 
 /* Hero Section */
@@ -98,7 +121,7 @@ header nav a:hover {
 
 .about-text {
     flex: 1;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .about-text h2 {
@@ -112,12 +135,30 @@ header nav a:hover {
     line-height: 1.8;
 }
 
-.about-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+.about-text-img {
+    width: 120px;  /* Adjust width as needed */
+    height: 120px;  /* Adjust height as needed */
+    border-radius: 50%;  /* Circular image */
     object-fit: cover;
+    margin-top: 1.5rem;  /* Adjust spacing if needed */
+   
 }
+
+
+
+.about-image img {
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: -10px 20px 60px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(181, 27, 117, 0.2); /* Blended shadow with a hint of pink */
+}
+
+
+
+
+
+
 
 /* Wavy Divider for About Section */
 .about::after {
