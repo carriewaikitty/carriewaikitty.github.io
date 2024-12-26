@@ -65,7 +65,7 @@ header nav a {
 
 header nav a:hover {
     color: #D8C4B6; /* Beige color on hover */
-    transform: scale(1.1); /* Slight scaling effect */
+  /*  transform: scale(1.1); /* Slight scaling effect */
 }
 
 /* Hover Circle Effect */
@@ -104,7 +104,7 @@ header nav a:hover::after {
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 
@@ -218,13 +218,13 @@ header nav a:hover::after {
     margin-right: auto;
 */	
 	padding: 3rem 0rem 2rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #333;
 	
 }
 
 .project-detail-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -279,13 +279,13 @@ header nav a:hover::after {
 	background-color: #F9F9F9;
     padding: 0rem;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #444;
 	
 }
 
 .project-additional-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
 	
 }
@@ -304,7 +304,7 @@ header nav a:hover::after {
     color: #ffffff; /* Text color */
     background-color: #B51B75; /* Button background color */
     text-decoration: none; /* Remove underline */
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 30px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Hover effect */
@@ -312,17 +312,6 @@ header nav a:hover::after {
 
 .project-button:hover {
     background-color: #9A1460; /* Darker shade for hover */
-}
-
-
-
-
-
-/* Section Divider (using background color) */
-.section-divider {
-    height: 2px;
-    background-color: #D8C4B6; /* Beige color for divider */
-    margin-top: 3rem;
 }
 
 

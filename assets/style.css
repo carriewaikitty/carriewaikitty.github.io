@@ -2,7 +2,7 @@
 // <weight>: Use a value from 100 to 900
 // <width>: Use a value from 62.5 to 100
 */
-
+/*
 .noto-sans-<uniquifier> {
   font-family: "Noto Sans", serif;
   font-optical-sizing: auto;
@@ -12,7 +12,7 @@
     "wdth" <width>;
 }
 
-
+*/
 
 /* General Reset: Reset margin and padding for all elements */
 * {
@@ -54,6 +54,7 @@ header nav ul {
     justify-content: center;
     gap: 2rem;
     margin: 10;
+
 }
 
 header nav a {
@@ -63,11 +64,12 @@ header nav a {
     font-size: 1.1rem;
     position: relative; /* For positioning the hover circle */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
 }
 
 header nav a:hover {
     color: #B51B75; /* dark pink on hover for better interaction */
-    transform: scale(1.1); /* Slight scaling effect */
+   /* transform: scale(1.1); /* Slight scaling effect */
 }
 
 /* Hover Circle Effect (top-right corner of the header) */
@@ -87,6 +89,105 @@ header nav a::after {
 header nav a:hover::after {
     opacity: 1; /* Circle becomes visible on hover */
 }
+
+
+
+/* Remove hover circle for My Work */
+.dropdown > a::after {
+    display: none; /* Removes the circle dot effect for dropdown parent link */
+}
+
+/* Remove hover circle for links inside the dropdown menu */
+.dropdown-menu a::after {
+    display: none; /* Removes the circle dot effect for links inside the dropdown */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .arrow i{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .arrow i{
+    transform: rotate(180deg); 
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #B51B75;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    z-index: 10;
+    visibility: hidden;
+    min-width: 165px;
+	
+	
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #213555;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.3rem 0;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #B51B75;
+	text-decoration: wavy underline #B51B75;
+}
+
+/* Responsive Dropdown */
+
+/* Responsive Dropdown */
+@media (max-width: 480px) {
+    .dropdown-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px); /* Center align the dropdown */
+        min-width: 60%; /* Adjust width for smaller screens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        border-top: 3px solid #B51B75;
+        border-radius: 5px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0); /* Apply slide-up effect */
+        visibility: visible;
+    }
+}
+
+
+
 
 /* Hero Section */
 .hero {
@@ -125,7 +226,7 @@ header nav a:hover::after {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     flex-wrap: wrap; /* Allows wrapping when there's not enough space */
 }
@@ -140,7 +241,7 @@ header nav a:hover::after {
 .about-text h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 
@@ -167,7 +268,7 @@ header nav a:hover::after {
 
 
 .about-image img {
-    width: 450px;
+    width: 500px;
     height: 600px;
     border-radius: 30px;
     object-fit: cover;
@@ -196,7 +297,7 @@ header nav a:hover::after {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -216,7 +317,7 @@ header nav a:hover::after {
 */
 .projects-text {
     flex: 1;
-    max-width: 400px;
+    max-width: 390px;
 	align-self: flex-start; /* Aligns this specific container to the top */
 	
 }
@@ -224,7 +325,7 @@ header nav a:hover::after {
 .projects-text h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
 	
 }
 
@@ -246,13 +347,13 @@ header nav a:hover::after {
 /* Project Cards Container */
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust to auto-fit to avoid extra columns */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Adjust to auto-fit to avoid extra columns */
     gap: 2rem;
     justify-items: center; /* Ensures each card is centered within its grid cell */
     justify-content: center; /* Centers the entire grid */
     align-content: center; /* Aligns the content vertically (if necessary) */
     width: 100%; /* Ensures the grid spans the container's width */
-    max-width: 700px; /* Prevents excessive width on large screens */
+    max-width: 810px; /* Prevents excessive width on large screens */
     margin: 0 auto; /* Centers the grid container horizontally */
 }
 
@@ -295,6 +396,9 @@ header nav a:hover::after {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: auto; /* Moves the button to the bottom of the card */
+    max-width: 200px; /* Set a max-width to make the button narrower */
+    margin-left: auto; /* Centers the button horizontally */
+    margin-right: auto; /* Centers the button horizontally */
 }
 
 /* Project Card Button Hover Effect */
@@ -310,7 +414,35 @@ header nav a:hover::after {
     border-radius: 12px; /* Optional: rounds the corners of the image to match the card */
     object-fit: cover; /* Ensures the image fills the area, cropping if necessary */
     margin-bottom: 1.5rem; /* Adds space between the image and the text */
-	
+	margin-left: -2rem; /* Moves the image to the left to ignore the padding */
+    margin-right: -2rem; /* Moves the image to the right to ignore the padding */
+	margin-top: -2rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .about-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .about-text p {
+        font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
 }
 
 
@@ -319,7 +451,7 @@ header nav a:hover::after {
 
 /* Media Queries for Narrow Screens (Mobile) */
 @media (max-width: 768px) {
-    .about-container,
+    
 	.projects-container {
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
@@ -364,6 +496,7 @@ header nav a:hover::after {
 
 .contact h2 {
     font-size: 2.5rem;
+	font-weight: 700;
     margin-bottom: 2rem;
 }
 
@@ -373,7 +506,7 @@ header nav a:hover::after {
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     align-items: flex-start;
 }
