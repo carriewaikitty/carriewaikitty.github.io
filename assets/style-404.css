@@ -24,33 +24,34 @@ header {
 
 /* 404 Content Section Styling */
 .not-found {
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
     text-align: center;
     flex-grow: 1; /* Ensures content can grow and push footer down */
+	margin-bottom: 2rem;
 }
 
-.not-found h2 {
-    font-size: 2rem;
+.not-found h1 {
+    font-size: 1.5rem;
     color: #213555;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .not-found p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: #333333; /* Dark text for description */
 }
 
 /* Image Placeholder Styling */
 .not-found-image {
-    margin: 3rem 0;
+    margin-top: 2.5rem;
+	
 }
 
 .not-found-image img {
-    width: 300px; /* Adjust image size */
+    width: 40%; /* Adjust image size */
     height: auto;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image */
+    
 }
 
 /* Button Styling */
@@ -59,6 +60,7 @@ header {
     background-color: #D8C4B6; /* Beige background for button */
     color: #213555;
     font-size: 1.1rem;
+	font-weight: 700;
     padding: 12px 24px;
     border-radius: 25px;
     text-decoration: none;
@@ -67,23 +69,16 @@ header {
 
 .back-home-button:hover {
     background-color: #3E5879; /* Dark blue hover state */
-    color: #F9F9F9; /* Change text color on hover */
+    color: #FFFFFF; /* Change text color on hover */
     transform: scale(1.05); /* Subtle hover effect */
 }
 
-/* Wavy Divider */
-.wavy-divider-a {
-    background-image: url('imgs/wave.svg'); /* Use a custom wave image */
-    background-size: cover;
-    height: 30px; /* Adjust the height of the wavy divider */
-    width: 100%;
-    margin: 0; /* Remove margin to prevent extra space */
-}
+
 
 /* Footer Styling */
 footer {
     text-align: center;
-    padding: 0.3rem; /* Reduced padding for a more compact footer */
+    padding: 0.2rem; /* Reduced padding for a more compact footer */
     background-color: #3E5879; /* Theme blue background for footer */
     color: #f9f9f9; /* Dark text color to contrast with light footer background */
 }
@@ -112,8 +107,4 @@ footer p {
         width: 250px; /* Make image smaller for mobile screens */
     }
 
-    /* Wavy Divider adjustments for small screens */
-    .wavy-divider-a {
-        height: 50px; /* Adjust wave height on smaller screens */
-    }
 }
