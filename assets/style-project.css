@@ -29,46 +29,40 @@ svg {
 
 
 /* Header Styling (Category Title) */
-/* Header Styling */
-header {
-    background-color: #213555; /* Dark blue background for header */
-    color: #FFFFFF; /* White text color */
-    padding: 2rem 2rem; /* Add padding to give space around elements */
-    display: flex; /* Using flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
-    text-align: center; /* Center the text inside */
-    position: relative; /* So we can position elements correctly */
 
-	
+/* Header Styles */
+header {
+    background-color: #213555; /* Original background color */
+    color: #ffffff; /* dark blue  text */
+    padding: 2rem 0; /* Retained padding 2rem is at the top*/
+    position: relative; /* make it possible to place the circle on the top-right */
 }
 
-/* Navigation Styles */
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center the navigation links */
-    gap: 2rem;
-    margin: 0;
-    padding-bottom: 5rem; /* Space between nav and title */
+    justify-content: center;
+    gap: 3rem;
+    margin: 10;
+
 }
 
 header nav a {
-    color: #FFFFFF; /* White text color for links */
+    color: #ffffff; /* dark blue text */
     text-decoration: none;
-    font-weight: 700; /* Lighter font weight */
+    font-weight: 700; /* font weight---300 is light */
     font-size: 1.1rem;
     position: relative; /* For positioning the hover circle */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
 }
 
 header nav a:hover {
-    color: #D8C4B6; /* Beige color on hover */
-  /*  transform: scale(1.1); /* Slight scaling effect */
+    color: #D8C4B6; /* beige on hover for better interaction */
+   /* transform: scale(1.1); /* Slight scaling effect */
 }
 
-/* Hover Circle Effect */
+/* Hover Circle Effect (top-right corner of the header) */
 header nav a::after {
     content: "";
     position: absolute;
@@ -76,7 +70,7 @@ header nav a::after {
     right: -7px; /* Position it to the right of the link */
     width: 7px; /* Size of the circle */
     height: 7px;
-    background-color: #D8C4B6; /* Beige color for the circle */
+    background-color: #D8C4B6; /* beige color for the circle */
     border-radius: 50%; /* Makes it round */
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -85,6 +79,109 @@ header nav a::after {
 header nav a:hover::after {
     opacity: 1; /* Circle becomes visible on hover */
 }
+
+
+
+/* Remove hover circle for My Work */
+.dropdown > a::after {
+    display: none; /* Removes the circle dot effect for dropdown parent link */
+}
+
+/* Remove hover circle for links inside the dropdown menu */
+.dropdown-menu a::after {
+    display: none; /* Removes the circle dot effect for links inside the dropdown */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .arrow i{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .arrow i{
+    transform: rotate(180deg); 
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #D8C4B6;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    z-index: 10;
+    visibility: hidden;
+    min-width: 165px;
+	
+	
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #213555;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.3rem 0;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #B51B75;
+	text-decoration: wavy underline #B51B75;
+}
+
+/* Responsive Dropdown */
+
+/* Responsive Dropdown */
+@media (max-width: 480px) {
+    .dropdown-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px); /* Center align the dropdown */
+        min-width: 60%; /* Adjust width for smaller screens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        border-top: 3px solid #B51B75;
+        border-radius: 5px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0); /* Apply slide-up effect */
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
+
 
 /* Hero Section */
 .hero {
@@ -134,7 +231,7 @@ header nav a:hover::after {
 
 /* Project Category Styles */
 .project-category {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 2rem 1rem;
     display: flex;
@@ -149,7 +246,7 @@ header nav a:hover::after {
     gap: 2rem;
     flex-wrap: wrap;
     align-items: flex-start;
-	max-width: 1200px;
+	max-width: 1280px;
 }
 
 
@@ -157,6 +254,8 @@ header nav a:hover::after {
 .project-info {
     flex: 1;
     text-align: left; /* Align text to the left */
+	max-width: 600px;
+	
 	
 }
 
@@ -173,7 +272,7 @@ header nav a:hover::after {
 /*Role and tools section */
 .project-details {
     list-style-type: disc; /* Display bullet points as dots */
-    padding-left: 1rem; /* Add padding to align text properly with dots */
+    padding-left: 1.2rem; /* Add padding to align text properly with dots */
     margin: 0;
 }
 

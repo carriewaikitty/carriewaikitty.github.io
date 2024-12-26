@@ -8,6 +8,7 @@
     <script src="assets/script-project.js" defer></script> <!-- Link to external JS file for image enlarge functionality -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
 	
 	
@@ -19,11 +20,19 @@
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+				<li class="dropdown">
+                <a href="#projects">My Work <span class="arrow"><i class="fas fa-chevron-down"></i></span></a>
+				
+			<!--	&#x25BC;</span></a>   -->
+                <div class="dropdown-menu">
+                    <a href="#accessibility">Accessibility</a>
+                    <a href="#elearning">eLearning</a>
+                    <a href="#visualdesign">Visual Design</a>
+                    <a href="#photography">Photography</a>
+                </div>
+            </li>
             </ul>
         </nav>
-        
     </header>
 
  <!-- Hero Section -->
