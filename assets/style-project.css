@@ -246,6 +246,7 @@ header nav a:hover::after {
     gap: 2rem;
     flex-wrap: wrap;
     align-items: flex-start;
+	justify-content: space-between; /* Distribute content evenly with space in between */
 	max-width: 1280px;
 }
 
@@ -296,11 +297,19 @@ header nav a:hover::after {
 }
 
 /* Right Content: Project Image */
+.project-image {
+    flex: 0 1 auto; /* Prevent the image from growing disproportionately */
+    max-width: 600px; /* Limit the maximum width of the image */
+    margin-left: auto; /* Push the image to the right */
+}
+
+
+
 .project-image img {
     width: 100%;
-    max-width: 600px;
+  
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
   
 
 /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    */
@@ -337,10 +346,10 @@ header nav a:hover::after {
 
 
 .additional-images .image-placeholder {
-    width: calc(50% - 0.5rem); /* Keep the width flexible */
-	aspect-ratio: 16 / 9; /* Adjust this ratio as needed */
+   /* width: calc(50% - 0.5rem); /* Keep the width flexible */
+/*	aspect-ratio: 16 / 9; /* Adjust this ratio as needed */
     overflow: hidden; /* Ensures content respects border-radius */
-    border-radius: 10px; /* Apply rounded corners */
+    border-radius: 20px; /* Apply rounded corners */
     cursor: zoom-in;
 	
 	    
@@ -361,7 +370,7 @@ header nav a:hover::after {
 }
 
 .additional-images .image-placeholder:hover img {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.01); /* Slight zoom effect on hover */
 }
 
 
@@ -375,7 +384,7 @@ header nav a:hover::after {
     margin-left: auto;
     margin-right: auto;
 	*/
-	background-color: #F9F9F9;
+/*	background-color: #F9F9F9; */
     padding: 0rem;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -437,7 +446,7 @@ header nav a:hover::after {
 .modal-image {
     max-width: 90%;
     max-height: 80%;
-    border-radius: 10px;
+  /*  border-radius: 10px;   */
     object-fit: contain;
 	cursor: zoom-out;
 }
@@ -451,21 +460,90 @@ header nav a:hover::after {
     cursor: pointer;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 0.5rem; /* Reduced padding for a more compact footer */
-    background-color: #3E5879; /* Theme blue background for footer */
-    color: #f9f9f9; /* Dark text color to contrast with light footer background */
+
+
+/* Project Video Section */
+.video-container {
+  position: relative;
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-footer p {
-    font-size: 0.9rem;
-	font-weight: bold;
+video {
+  width: 100%;
+  display: block;
+  border-radius: 10px 10px 0 0;
 }
 
+.video-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 10px 10px;
+}
 
+.control-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-right: 10px; /* Added gap between buttons */
+}
 
+.control-btn:hover {
+  color: #7FC7D9;
+}
+
+.seek-bar {
+  flex-grow: 1;
+  margin: 0 1rem;
+  background: #444;
+  cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb {
+  background: #7FC7D9;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.volume-slider {
+  width: 100px;
+  background: #444;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  background: #7FC7D9;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.speed-selector {
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.speed-selector:focus {
+  outline: none;
+}
+
+.video-controls .fas {
+  pointer-events: none;
+}
 
 /* Responsive Design Adjustments */
 @media screen and (max-width: 768px) {
@@ -482,4 +560,110 @@ footer p {
 
 		
     }
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background: url('imgs/test.jpg') no-repeat center center/cover; /* Background image */
+    color: #F9F9F9; /* Off-white color for text */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay for readability */
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+/* Container for text and buttons */
+.contact-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header Style */
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Buttons Container */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure the buttons stay vertically aligned */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Allow buttons to wrap in case of small screens */
+}
+
+/* Circle Buttons */
+.contact-button {
+    width: 50px;
+    height: 50px;
+    background-color: #213555; /* Dark blue background for buttons */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #7FC7D9; /* Light blue on hover */
+}
+
+/* Description Paragraph */
+.contact-description {
+    font-size: 1.2rem;
+    color: #D8C4B6; /* Beige color for the description */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center; /* Ensure buttons remain centered */
+        gap: 1.5rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 0.5rem; /* Reduced padding for a more compact footer */
+    background-color: #3E5879; /* Theme blue background for footer */
+    color: #f9f9f9; /* Dark text color to contrast with light footer background */
+}
+
+footer p {
+    font-size: 0.85rem;
+	font-weight: 500;
 }

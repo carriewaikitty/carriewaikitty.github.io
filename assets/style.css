@@ -489,42 +489,94 @@ header nav a:hover::after {
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
-    background-color: #213555; /* Dark blue background for the contact section */
+    background: url('imgs/test.jpg') no-repeat center center/cover; /* Background image */
     color: #F9F9F9; /* Off-white color for text */
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
 }
 
+/* Overlay for readability */
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+/* Container for text and buttons */
+.contact-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header Style */
 .contact h2 {
     font-size: 2.5rem;
-	font-weight: 700;
-    margin-bottom: 2rem;
-}
-
-/* Contact Info Section */
-.contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 1300px;
-    margin: 0 auto;
-    align-items: flex-start;
-}
-
-.contact-info {
-    flex: 1;
-    max-width: 500px;
-}
-
-.contact-info p {
-    font-size: 1.2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.contact-info a {
-    color: #D8C4B6; /* Beige color for links in the contact section */
-    text-decoration: none;
+/* Buttons Container */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure the buttons stay vertically aligned */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Allow buttons to wrap in case of small screens */
 }
+
+/* Circle Buttons */
+.contact-button {
+    width: 50px;
+    height: 50px;
+    background-color: #213555; /* Dark blue background for buttons */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #7FC7D9; /* Light blue on hover */
+}
+
+/* Description Paragraph */
+.contact-description {
+    font-size: 1.2rem;
+    color: #D8C4B6; /* Beige color for the description */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center; /* Ensure buttons remain centered */
+        gap: 1.5rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+}
+
+
 
 /* Footer Styles */
 footer {
@@ -535,6 +587,6 @@ footer {
 }
 
 footer p {
-    font-size: 0.9rem;
-	font-weight: bold;
+    font-size: 0.85rem;
+	font-weight: 500;
 }

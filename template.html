@@ -27,8 +27,8 @@
                 <div class="dropdown-menu">
                     <a href="#accessibility">Accessibility</a>
                     <a href="#elearning">eLearning</a>
-                    <a href="#visualdesign">Visual Design</a>
-                    <a href="#photography">Photography</a>
+                    <a href="#visualdesign">Digital Design</a>
+  
                 </div>
             </li>
             </ul>
@@ -96,38 +96,60 @@
 				<a href="https://example.com" target="_blank" class="project-button">Visit Project</a>
 			</div>
 			
-			
-			
-			
-		<!--	
-			
-                <div class="project-description">
-                    <h3>Interactive Learning Module example 1</h3>
-                    <p>This project showcases an interactive eLearning module designed to engage users with quizzes, videos, and learning assessments. The goal was to create a comprehensive learning experience that can be scaled across various educational topics.</p>
-                 <ul class="project-info">
-                <li class="role">Role: <span>Instructional Designer</span></li>
-                <li class="tools">Tools Used: <span>Articulate Storyline</span>, <span>Adobe XD</span></li>
-            </ul>
+		
+
+			<!--video section start -->
+		   <div class="project-video">
+			<div class="video-container">
+			  <video id="customVideo" crossorigin="anonymous">
+				<source src="assets/video-test.mp4" type="video/mp4" />
+				<track src="captions.vtt" kind="subtitles" srclang="en" label="English" default />
+				Your browser does not support the video tag.
+			  </video>
+
+				<!-- Custom Video Controls -->
+				<div class="video-controls">
+				  <!-- Play/Pause Button -->
+				  <button id="playPauseBtn" class="control-btn">
+					<i class="fas fa-play"></i>
+				  </button>
+
+				  <!-- Mute Button -->
+				  <button id="muteBtn" class="control-btn">
+					<i class="fas fa-volume-up"></i>
+				  </button>
+
+				  <!-- Volume Control Slider -->
+				  <input type="range" id="volumeControl" class="volume-slider" min="0" max="1" step="0.01" value="1" />
+
+				  <!-- Seek Bar -->
+				  <input type="range" id="seekBar" class="seek-bar" min="0" value="0" step="1" />
+
+				  <!-- Closed Captions Toggle -->
+				  <button id="ccToggleBtn" class="control-btn">
+					<i class="fas fa-closed-captioning"></i>
+				  </button>
+
+				  <!-- Speed Control -->
+				  <select id="speedControl" class="speed-selector">
+					<option value="0.5">0.5x</option>
+					<option value="1" selected>1x</option>
+					<option value="1.5">1.5x</option>
+					<option value="2">2x</option>
+				  </select>
+
+				  <!-- Fullscreen Button -->
+				  <button id="fullscreenBtn" class="control-btn">
+					<i class="fas fa-expand"></i>
+				  </button>
+				</div>
+			  </div>
 			</div>
-                <div class="image-gallery">
-                    <div class="image-placeholder" tabindex="0" aria-label="Image 1 of 4" role="img" onclick="openModal('image1')">
-                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 1" class="image-item" id="image1">
-                    </div>
-                    <div class="image-placeholder" tabindex="0" aria-label="Image 2 of 4" role="img" onclick="openModal('image2')">
-                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 2" class="image-item" id="image2">
-                    </div>
-                    <div class="image-placeholder" tabindex="0" aria-label="Image 3 of 4" role="img" onclick="openModal('image3')">
-                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 3" class="image-item" id="image3">
-                    </div>
-                </div>
-				
-		-->	
-				
-        </div>
-        
-      
+			<!-- video section end -->
+ 
+		</div>		
     </section>
-	
+<!--white beige section divider -->	
 <svg width="100%" height="100%" aria-hidden="true" viewBox="0 0 6250 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Divider-2" serif:id="Divider 2" x="0" y="-0" width="6250" height="208.333" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="-0" width="6250" height="208.333"/></clipPath><g clip-path="url(#_clip1)"><rect x="-0" y="-0" width="6250" height="208.333" style="fill:#f9f9f9;"/><path d="M-0,70.833l6250,90.087l-0,47.413l-6250,0l-0,-137.5Z" style="fill:#f5efe7;"/></g></svg>
 	
 
@@ -135,26 +157,61 @@
     <section class="section-b">
         <div class="project-category">
             <div class="project-item">
-                <div class="project-description">
-                    <h3>Interactive Learning Module example 2</h3>
-                    <p>This project showcases an interactive eLearning module designed to engage users with quizzes, videos, and learning assessments..</p>
-                </div>
-                <div class="image-gallery">
-                    <div class="image-placeholder" tabindex="0" aria-label="Image 1 of 4" role="img" onclick="openModal('image4')">
-                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 1" class="image-item" id="image4">
-                    </div>
-                    <div class="image-placeholder" tabindex="0" aria-label="Image 2 of 4" role="img" onclick="openModal('image5')">
-                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 2" class="image-item" id="image5">
-                    </div>
-                    <div class="image-placeholder" tabindex="0" aria-label="Image 3 of 4" role="img" onclick="openModal('image6')">
-                        <img src="https://via.placeholder.com/400x300" alt="Placeholder Image 3" class="image-item" id="image6">
-                    </div>
-                </div>
-            </div>
+            <div class="project-item">
+			<!-- NEW Left Content: Project Title, Description, Role, and Tools -->
+				<div class="project-info">
+						<h2>Project Title</h2>
+						<p>Short description of the project goes here.Short description of the project goes here.Short description of the project goes here.</p>
+						<ul class="project-details">
+							<li class="role"><span>My Role:</span> Designer</li>
+							<li class="tools"><span>Tools Used: </span>Figma, Photoshop</li>
+						</ul>
+				</div>
+					<!-- Right Content: Main Image -->
+				<div class="project-image">
+						<img src="assets/imgs/test.jpg" alt="Project Main Image">
+				</div>
+			</div>
+			
+			
+			<!-- Placeholder for detailed text -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+			</div>
+			
+			
+			<!-- Additional Images -->
+			<div class="additional-images">
+				<div class="image-placeholder" tabindex="0" aria-label="Image 1 of 4" role="img" onclick="openModal('image1')">
+					<img src="assets/imgs/test.jpg" alt="Additional Image 1" class="image-item" id="image1">
+				</div>
+				<div class="image-placeholder" tabindex="0" aria-label="Image 2 of 4" role="img" onclick="openModal('image2')">
+					<img src="https://via.placeholder.com/400x300" alt="Additional Image 2" class="image-item" id="image2">
+				</div>
+			</div>			
+			
+			
+			<!-- Placeholder for additional text -->
+			<div class="project-additional-text">
+				<p>Additional placeholder text for any other details about the project. This section can also be used for notes or observations.</p>
+			</div>			
+			
+			
+			<div class="button-placeholder">
+				<a href="https://example.com" target="_blank" class="project-button">Visit Project</a>
+			</div>
+			
+			
+
+
         </div>
     </section>
+<!--beige white section divider -->	
+<svg width="100%" height="100%" aria-hidden="true" viewBox="0 0 6250 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Divider-2" serif:id="Divider 2" x="0" y="-0" width="6250" height="208.333" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="-0" width="6250" height="208.333"/></clipPath><g clip-path="url(#_clip1)"><rect x="0" y="-0" width="6250" height="208.333" style="fill:#f5efe7;"/><path d="M6250,72.917l-6250,90.086l0,47.414l6250,-0l0,-137.5Z" style="fill:#f9f9f9;"/></g></svg>	
 	
-<svg width="100%" height="100%" aria-hidden="true" viewBox="0 0 6250 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Divider-2" serif:id="Divider 2" x="0" y="-0" width="6250" height="208.333" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="-0" width="6250" height="208.333"/></clipPath><g clip-path="url(#_clip1)"><rect x="-0" y="-0" width="6250" height="208.333" style="fill:#f5efe7;"/><path d="M-0,70.833l6250,90.087l-0,47.413l-6250,0l-0,-137.5Z" style="fill:#f9f9f9;"/></g></svg>	
+	
+	
+	
 	
 	
 
@@ -163,6 +220,26 @@
         <span class="modal-close">&times;</span>
         <img id="modal-image" class="modal-image" src="" alt="Enlarged image">
     </div>
+
+
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact">
+		<div class="contact-content">
+			<h2>My Name</h2>
+			<div class="contact-buttons">
+				<a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-button linkedin">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="mailto:youremail@example.com" class="contact-button email">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
+			<p class="contact-description">A brief description about myself. This is just a placeholder for now.</p>
+		</div>
+	</section>
+
+
 
     <!-- Footer Section -->
     <footer>

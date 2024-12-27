@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":128,"text":"- [Narrator] - ExampleCompany is a rapidly growing eCommerce company"},{"start":3025,"text":"that provides wide range of merchandise"},{"start":5008,"text":"to their customers."},{"start":6488,"text":"In the last year,"},{"start":7353,"text":" the company has seen an exponential increase"},{"start":9400,"text":"in demand for its services, and it needs to scale"},{"start":12137,"text":"its infrastructure quickly to meet these demands."},{"start":14960,"text":"However, with current on-premise infrastructure,"},{"start":17744,"text":"ExampleCompany doesn't have enough space  in their data center "},{"start":20408,"text":"to add more resources. "},{"start":22688,"text":"The company is facing several challenges, "},{"start":24673,"text":"such as high downtime,  "},{"start":25904,"text":"security vulnerabilities,"},{"start":27608,"text":"and operational inefficiencies."}]}]};
+    window.globalLoadJsAsset('story_content/6nGnCYae9n5_transcripts.js', JSON.stringify(data));
+})();

@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":128,"text":"Okay. Alright, so here's the deal."},{"start":2385,"text":"We've got two big issues."},{"start":4192,"text":"First up, security. We had a hack recently."},{"start":6816,"text":"customer info got leaked,"},{"start":8305,"text":"and now some folks have stopped shopping with us."},{"start":10560,"text":"Not good."},{"start":11457,"text":"We really need to make sure that doesn't happen again."},{"start":14144,"text":"Second, our website keeps crashing"},{"start":16409,"text":"during our big annual sale. "},{"start":17888,"text":"It's just not built to handle all those shoppers at once, "},{"start":20487,"text":"you know? "},{"start":21568,"text":"Our current setup just can't cut it"},{"start":23255,"text":" for these once-a-year events."},{"start":24984,"text":"We're thinking we need some kind of"},{"start":26301,"text":"flexible computing power that can ramp up when we need it."}]}]};
+    window.globalLoadJsAsset('story_content/6IidkCFNEww_transcripts.js', JSON.stringify(data));
+})();
