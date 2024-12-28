@@ -8,7 +8,7 @@
 
 
 /*Focus state*/
-header nav a:focus, .project-button:focus, .additional-images .image-placeholder:focus{
+header nav a:focus, .project-button:focus{
     outline: 3px solid #FF3796;
     outline-offset: 4px;
 }
@@ -40,12 +40,10 @@ svg {
 
 
 
-/* Header Styling (Category Title) */
-
 /* Header Styles */
 header {
-    background-color: #213555; /* Original background color */
-    color: #ffffff; /* dark blue  text */
+    background-color: #f9f9f9; /* Original background color */
+    color: #213555; /* dark blue  text */
     padding: 2rem 0; /* Retained padding 2rem is at the top*/
     position: relative; /* make it possible to place the circle on the top-right */
 }
@@ -60,7 +58,7 @@ header nav ul {
 }
 
 header nav a {
-    color: #ffffff; /* dark blue text */
+    color: #213555; /* dark blue text */
     text-decoration: none;
     font-weight: 700; /* font weight---300 is light */
     font-size: 1.1rem;
@@ -70,7 +68,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #D8C4B6; /* beige on hover for better interaction */
+    color: #B51B75; /* dark pink on hover for better interaction */
    /* transform: scale(1.1); /* Slight scaling effect */
 }
 
@@ -82,7 +80,7 @@ header nav a::after {
     right: -7px; /* Position it to the right of the link */
     width: 7px; /* Size of the circle */
     height: 7px;
-    background-color: #D8C4B6; /* beige color for the circle */
+    background-color: #B51B75; /* dark pink color for the circle */
     border-radius: 50%; /* Makes it round */
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -125,7 +123,7 @@ header nav a:hover::after {
     left: -15px;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid #D8C4B6;
+    border-top: 3px solid #B51B75;
     border-radius: 10px;
     opacity: 0;
     transform: translateY(10px);
@@ -190,74 +188,129 @@ header nav a:hover::after {
 
 
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 8rem 1rem 1rem;
-    background-color: #213555; /* Dark blue for hero section background */
-    color: #F9f9f9; /* Off-white color for text to stand out */
+/* About Me Section */
+.about {
+    padding: 8rem 2rem 2rem;
+    background-color: #F9F9F9; /* Off-white background for the About Me section */
     position: relative;
-
-
+	overflow: hidden;
+	padding-bottom:100px;
+	
 }
 
-.hero h1 {
+
+.about-container {
+    
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;/* Ensures text and image are stacked */
+}
+
+.about-text {
+    margin-bottom: 2rem; /* Space between text and image */
+    max-width: 900px;
+}
+
+.about-text h1 {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 900;
 }
 
-.hero p {
-    font-size: 1.3rem;
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 
+.about-text p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+   
+.about-image {
+    margin-top: 2rem; /* Add space between the text and the image */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: -10px 20px 60px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(181, 27, 117, 0.2); /* Blended shadow with a hint of pink */
+}
 
 @media (max-width: 992px) {
-    .hero {
+    .about-container {
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
 
-    .hero h1 {
+    .about-text h1 {
         font-size: 2.8rem; /* Adjust font size */
     }
 
+    .about-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
 
-    .hero p {
+    .about-text p {
         font-size: 1.2rem; /* Adjust font size for better readability */
     }
 
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
 }
 
 
+
+
 @media (max-width: 768px) {
-    .hero {
+    .about-container {
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
 
-    .hero h1 {
+    .about-text h1 {
         font-size: 2.5rem; /* Adjust font size */
     }
 
+    .about-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
 
-    .hero p {
+    .about-text p {
         font-size: 1.1rem; /* Adjust font size for better readability */
     }
 
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
 }
 
 
 @media (max-width: 480px) {
-    .hero {
+    .about-container {
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
 
-    .hero h1 {
+    .about-text h1 {
         font-size: 2rem; /* Adjust font size */
     }
 
+    .about-text h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
 
-    .hero p {
+    .about-text p {
         font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
     }
 }
 
@@ -275,23 +328,14 @@ header nav a:hover::after {
 
 
 
-/* Section B */
-.section-b {
-    background-color: #F5EFE7; /* Light Beige background for Section B */
-    padding: 3rem 2rem;
-}
-
-
-
-
 /* Project Category Styles */
 .project-category {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+
 }
 
 
@@ -306,77 +350,13 @@ header nav a:hover::after {
 }
 
 
-/* Left Content: Project Info */
-.project-info {
-    flex: 1;
-    text-align: left; /* Align text to the left */
-	max-width: 600px;
-	
-	
-}
-
-.project-info h2 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.project-info p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-/*Role and tools section */
-.project-details {
-    list-style-type: disc; /* Display bullet points as dots */
-    padding-left: 1.2rem; /* Add padding to align text properly with dots */
-    margin: 0;
-}
-
-.project-details li {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    position: relative;
-   
-}
-
-/* Customize the bullet color */
-.project-details li::marker {
-    color: #B51B75; /* Change the bullet color */
-	font-size: 1.2rem;
-}
-
-
-.project-details span {
-   /* color: #D8C4B6; /* Add a colorful highlight for roles and tools */
-    font-weight: bold;
-}
-
-/* Right Content: Project Image */
-.project-image {
-    flex: 0 1 auto; /* Prevent the image from growing disproportionately */
-    max-width: 600px; /* Limit the maximum width of the image */
-    margin-right: auto; /* Push the image to the Left, and if want to push to right, change to margin-left */
-}
-
-
-
-.project-image img {
-    width: 100%;
-  
-    height: auto;
-    border-radius: 20px;
-  
-
-/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    */
-}
-
 /* Detailed Text Placeholder right below the project title and image */
 .project-detail-text {
 	
-	padding: 3rem 0rem 2rem;
+	padding: 0rem 0rem 2rem;
     font-size: 1.2rem;
     margin: 0 auto; /* Center align the text block */
-	max-width:1000px;
+	max-width:900px;
 	
 }
 
@@ -392,7 +372,7 @@ header nav a:hover::after {
 	gap: 2rem;
     justify-content: flex-start; /* Align to the left */
     margin-bottom: 2rem;
-	max-width:1000px;
+	max-width:1100px;
 }
 
 
@@ -401,7 +381,7 @@ header nav a:hover::after {
 /*	aspect-ratio: 16 / 9; /* Adjust this ratio as needed */
     overflow: hidden; /* Ensures content respects border-radius */
     border-radius: 10px; /* Apply rounded corners */
-    cursor: zoom-in;
+  
 	
 	    
 	/*comment out below if ohter image shows issues*/	
@@ -420,119 +400,12 @@ header nav a:hover::after {
     transition: transform 0.3s ease; /* Add hover zoom-in effect */
 }
 
-.additional-images .image-placeholder:hover img {
-    transform: scale(1.01); /* Slight zoom effect on hover */
-}
-
-
-
-
-
-/* Button Placeholder Styling */
-.button-placeholder {
-    display: flex; /* Center align the button */
-    justify-content: flex-start; /* Align it to the left of the container */
-    margin: 2rem 0; /* Add spacing around the button */
-
-
-}
-
-/* Button Styling */
-.project-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff; /* Text color */
-    background-color: #B51B75; /* Button background color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 30px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Hover effect */
-}
-
-.project-button:hover {
-    background-color: #9A1460; /* Darker shade for hover */
-}
 
 
 
 
 
 
-
-/* Modal Styling for image popup */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-	cursor: zoom-out;
-}
-
-.modal-image {
-    max-width: 90%;
-    max-height: 80%;
-  /*  border-radius: 10px;   */
-    object-fit: contain;
-	cursor: zoom-out;
-}
-
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-}
-
-
-
-/* Project Video Section */
-.video-container {
-  position: relative;
-  background: #000;
-  border-radius: 10px;
-  overflow: hidden;
-  max-width:1000px;
-  margin: 0 auto;   /*Center the video block*/
-  
-}
-
-video {
-  width: 100%;
-  display: block;
-  border-radius: 10px 10px 0 0;
-}
-
-
-
-
-
-
-
-/* Responsive Design Adjustments */
-@media screen and (max-width: 768px) {
-    .project-item {
-        flex-direction: column;
-    }
-
-    .additional-images {
-        flex-direction: column;
-    }
-
-    .additional-images .image-placeholder {
-        width: 100%;
-
-		
-    }
-}
 
 
 /* Contact Section */
@@ -638,4 +511,3 @@ footer {
 footer p {
     font-size: 0.85rem;
 	font-weight: 500;
-}

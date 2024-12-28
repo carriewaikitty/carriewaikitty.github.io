@@ -2,7 +2,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the page takes up at least the full height of the viewport */
+    min-height: 99vh; /* Ensures the page takes up at least the full height of the viewport */
 	
 	font-family: Noto Sans, serif;
 	
@@ -37,29 +37,35 @@ header {
 }
 
 .not-found p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
     color: #333333; /* Dark text for description */
 }
 
 /* Image Placeholder Styling */
 .not-found-image {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	
 	
 }
 
 .not-found-image img {
-    width: 40%; /* Adjust image size */
+    width: 100%; /* Adjust image size */
     height: auto;
+	align-items:center;
     
 }
 
 /* Button Styling */
 .back-home-button {
-    display: inline-block;
+    margin-top: 1rem;
+	display: inline-block;
     background-color: #D8C4B6; /* Beige background for button */
     color: #213555;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 	font-weight: 700;
     padding: 12px 24px;
     border-radius: 25px;
@@ -75,28 +81,29 @@ header {
 
 
 
-/* Footer Styling */
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 0.2rem; /* Reduced padding for a more compact footer */
-    background-color: #3E5879; /* Theme blue background for footer */
-    color: #f9f9f9; /* Dark text color to contrast with light footer background */
+    padding: 0.5rem; /* Reduced padding for a more compact footer */
+    background-color: #F5EFE7; /* Theme blue background for footer */
+    color: #333; /* Dark text color to contrast with light footer background */
 }
 
 footer p {
-    font-size: 0.9rem;
-	font-weight: bold;
+    font-size: 0.85rem;
+	font-weight: 500;
 }
 
 /* Responsive Design for smaller screens */
-@media screen and (max-width: 768px) {
-    .not-found h2 {
-        font-size: 1.8rem; /* Slightly smaller heading on mobile */
+@media (max-width: 768px) {
+    .not-found h1 {
+        font-size: 1.2rem; /* Slightly smaller heading on mobile */
     }
 
     .not-found p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
+	
 
     .back-home-button {
         font-size: 1rem;
@@ -104,7 +111,7 @@ footer p {
     }
 
     .not-found-image img {
-        width: 250px; /* Make image smaller for mobile screens */
+        width: 100%; /* Make image smaller for mobile screens */
     }
 
 }

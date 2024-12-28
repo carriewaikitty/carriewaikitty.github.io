@@ -21,6 +21,19 @@
     box-sizing: border-box;
 }
 
+/*Focus state*/
+header nav a:focus, .project-card a:focus {
+    outline: 3px solid #FF3796;
+    outline-offset: 4px;
+}
+
+.contact-button:focus {
+    outline: 3px solid #FF3796;
+    outline-offset: 4px;
+}
+
+
+
 body {
     
 	font-family: Noto Sans, serif;
@@ -52,7 +65,7 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 3.5rem;
     margin: 10;
 
 }
@@ -189,30 +202,12 @@ header nav a:hover::after {
 
 
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 5rem 2rem;
-    background-color: #213555; /* Dark blue for hero section background */
-    color: #F5EFE7; /* Off-white color for text to stand out */
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
 
 
 
 /* About Me Section */
 .about {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background-color: #F9F9F9; /* Off-white background for the About Me section */
     position: relative;
 	overflow: hidden;
@@ -226,12 +221,10 @@ header nav a:hover::after {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
     flex-wrap: wrap; /* Allows wrapping when there's not enough space */
 }
-
-
 
 .about-text {
     flex: 1;
@@ -239,7 +232,7 @@ header nav a:hover::after {
 }
 
 .about-text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     font-weight: 900;
 }
@@ -252,7 +245,7 @@ header nav a:hover::after {
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
 }
 
@@ -265,14 +258,86 @@ header nav a:hover::after {
    
 }
 
-
-
 .about-image img {
-    width: 500px;
-    height: 600px;
+    width: 100%;
+    height: auto;
     border-radius: 30px;
     object-fit: cover;
     box-shadow: -10px 20px 60px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(181, 27, 117, 0.2); /* Blended shadow with a hint of pink */
+}
+
+
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .about-text h1 {
+        font-size: 2.8rem; /* Adjust font size */
+    }
+
+    .about-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .about-text p {
+        font-size: 1.2rem; /* Adjust font size for better readability */
+    }
+
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .about-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .about-text p {
+        font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .about-text h1 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .about-text p {
+        font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+
+    .about-image img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
 }
 
 
@@ -297,40 +362,35 @@ header nav a:hover::after {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 
-/*
-.projects-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;  Allows wrapping when the screen is narrow 
-    text-align: center;  Centers the text content on smaller screens 
-}
-
-*/
 .projects-text {
     flex: 1;
-    max-width: 390px;
+    max-width: 400px;
 	align-self: flex-start; /* Aligns this specific container to the top */
 	
 }
 
-.projects-text h2 {
-    font-size: 2.5rem;
+.projects-text h1 {
+    font-size: 3rem;
     margin-bottom: 1.5rem;
-    font-weight: 700;
+    font-weight: 900;
+	
+}
+
+
+.projects-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
 	
 }
 
 .projects-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
 	
 }
@@ -338,16 +398,14 @@ header nav a:hover::after {
 
 
 
-/* Project Section Title */
-.projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
+
+
+
 
 /* Project Cards Container */
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Adjust to auto-fit to avoid extra columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust to auto-fit to avoid extra columns */
     gap: 2rem;
     justify-items: center; /* Ensures each card is centered within its grid cell */
     justify-content: center; /* Centers the entire grid */
@@ -362,7 +420,7 @@ header nav a:hover::after {
 .project-card {
     background-color: #F9F9F9; /* Off-white background for the project card */
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -422,39 +480,50 @@ header nav a:hover::after {
 
 
 
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-    }
-
-    .about-text h1 {
-        font-size: 2.5rem; /* Adjust font size */
-    }
-
-    .about-text h2 {
-        font-size: 2rem; /* Adjust font size */
-    }
-
-    .about-text p {
-        font-size: 1.1rem; /* Adjust font size for better readability */
-    }
-
-    .about-image img {
-        width: 100%; /* Make the image responsive */
-        height: auto;
-    }
-}
-
-
 
 
 
 /* Media Queries for Narrow Screens (Mobile) */
+@media (max-width: 992px) {
+    
+	.projects-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+	.projects-text h1 {
+        font-size: 2.8rem; /* Adjust font size */
+    }
+
+    .projects-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .projects-text p {
+        font-size: 1.2rem; /* Adjust font size for better readability */
+    }
+
+
+}
+
+
 @media (max-width: 768px) {
     
 	.projects-container {
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
+
+	.projects-text h1 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .projects-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .projects-text p {
+        font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+
 
     .project-cards {
         grid-template-columns: 1fr; /* Ensures cards are stacked vertically in one column */
@@ -465,6 +534,21 @@ header nav a:hover::after {
     .project-cards {
         grid-template-columns: 1fr; /* For very narrow screens, stack in a single column */
     }
+
+
+    	.projects-text h1 {
+        font-size: 2.2rem; /* Adjust font size */
+    }
+
+    .projects-text h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .projects-text p {
+        font-size: 1rem; /* Adjust font size for better readability */
+    }
+
+
 
     /* Adjustments to card content for mobile */
     .project-card h3 {
