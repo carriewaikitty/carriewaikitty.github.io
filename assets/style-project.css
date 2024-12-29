@@ -8,7 +8,7 @@
 
 
 /*Focus state*/
-header nav a:focus, .project-button:focus, .additional-images .image-placeholder:focus{
+header nav a:focus, .project-button:focus {
     outline: 3px solid #FF3796;
     outline-offset: 4px;
 }
@@ -376,7 +376,7 @@ header nav a:hover::after {
 	padding: 3rem 0rem 2rem;
     font-size: 1.2rem;
     margin: 0 auto; /* Center align the text block */
-	max-width:1000px;
+	max-width:950px;
 	
 }
 
@@ -392,7 +392,7 @@ header nav a:hover::after {
 	gap: 2rem;
     justify-content: flex-start; /* Align to the left */
     margin-bottom: 2rem;
-	max-width:1000px;
+	max-width:950px;
 }
 
 
@@ -472,15 +472,14 @@ header nav a:hover::after {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-	cursor: zoom-out;
+    cursor: zoom-out;
 }
 
 .modal-image {
-    max-width: 90%;
-    max-height: 80%;
-  /*  border-radius: 10px;   */
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-	cursor: zoom-out;
+    cursor: zoom-out;
 }
 
 .modal-close {
@@ -490,7 +489,15 @@ header nav a:hover::after {
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
 }
+
+.modal-close:focus {
+    outline: 2px solid #fff;
+}
+
 
 
 
@@ -500,7 +507,7 @@ header nav a:hover::after {
   background: #000;
   border-radius: 10px;
   overflow: hidden;
-  max-width:1000px;
+  max-width:950px;
   margin: 0 auto;   /*Center the video block*/
   
 }

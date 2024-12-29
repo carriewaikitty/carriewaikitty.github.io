@@ -3,69 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio - Category</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <title>eLearning Work</title>
+    <link rel="stylesheet" href="../assets/style-project.css"> <!-- Link to external CSS file -->
+    <script src="../assets/script-project.js" defer></script> <!-- Link to external JS file for image enlarge functionality -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
+	
+	
 </head>
 <body>
-    <!-- Category Title -->
+    <!-- Placeholder link to go back to the main index page -->
     <header>
-        <h1>eLearning Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+				<li class="dropdown">
+                <a href="#">My Work <span class="arrow"><i class="fas fa-chevron-down"></i></span></a>
+				
+			<!--	&#x25BC;</span></a>   -->
+                <div class="dropdown-menu">
+                    <a href="a11y/">Accessibility</a>
+                    <a href="#">eLearning</a>
+                    <a href="design/">Digital Design</a>
+  
+                </div>
+            </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- First Project Section -->
-    <section class="project-category">
-        <div class="project-item">
-            <div class="project-content">
-                <!-- Project Image Placeholder -->
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/600x400" alt="Project Image Placeholder">
-                </div>
-
-                <!-- Project Description -->
-                <div class="project-description">
-                    <h3>Interactive Learning Module</h3>
-                    <p>This project showcases an interactive eLearning module designed to engage users with quizzes, videos, and learning assessments. The goal was to create a comprehensive learning experience that can be scaled across various educational topics.</p>
-                </div>
-            </div>
-
-            <!-- Optional Embedded Video (iframe placeholder) -->
-            <div class="project-video">
-                <h4>Project Walkthrough</h4>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project Walkthrough Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <!-- Section Divider -->
-        <div class="divider"></div>
+ <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>eLearning Work</h1>
+        <p>Explore my work in learning experience design and eLearning development.</p>
     </section>
 
-    <!-- Second Project Section -->
-    <section class="project-category">
-        <div class="project-item">
-            <div class="project-content">
-                <!-- Project Image Placeholder -->
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/600x400" alt="Project Image Placeholder">
-                </div>
 
-                <!-- Project Description -->
-                <div class="project-description">
-                    <h3>Gamified Learning Experience</h3>
-                    <p>This project focuses on incorporating gamification into the learning process to make education more engaging. The design includes point systems, levels, and interactive elements that enhance the learning experience.</p>
-                </div>
-            </div>
+<!--HERO section divider -->
 
-            <!-- Optional Embedded Video (iframe placeholder) -->
-            <div class="project-video">
-                <h4>Project Walkthrough</h4>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project Walkthrough Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+
+<svg width="100%" height="100%" aria-hidden="true" viewBox="0 0 6250 625" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Divider-3" serif:id="Divider 3" x="0" y="0" width="6250" height="625" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="6250" height="625"/></clipPath><g clip-path="url(#_clip1)"><rect x="0" y="-0" width="6250" height="625" style="fill:#f9f9f9;"/><rect x="0" y="0" width="6250" height="625" style="fill:#f9f9f9;"/><path d="M-0,446.619c-0,-0 1017.79,130.944 1514.38,130.944c496.588,-0 4735.62,-293.344 4735.62,-293.344l0,-284.219l-6250,0l-0,446.619Z" style="fill:#213555;"/></g></svg>
+
+
+
+   <!-- Section A - guided scenario -->
+    <section class="section-a">
+        <div class="project-category">
+            <div class="project-item">
+			
+			
+			<!-- Left Content: Main Image -->
+			<div class="project-image">
+						<img src="imgs/01ConvoMain.png" alt="Guided conversation project demo.">
+			</div>			
+			
+			<!-- Right Content: Project Title, Description, Role, and Tools -->
+			<div class="project-info">
+						<h2>Project Title</h2>
+						<p>Short description of the project goes here.Short description of the project goes here.Short description of the project goes here.</p>
+						<ul class="project-details">
+							<li class="role"><span>My Role:</span> Designer</li>
+							<li class="tools"><span>Tools Used: </span>Figma, Photoshop</li>
+						</ul>
+				</div>
+					
+			
+			</div>
+			
+			
+			<!-- Placeholder for detailed text -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+			</div>
+			
+			
+			<!-- Additional Images -->
+			<div class="additional-images">
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 1 of 2" role="img" onclick="openModal('image1')">
+					<img src="imgs/01ConvoShow01.png" alt="Additional Image for guided conversation" class="image-item" id="image1">
+
+				</div>
+				
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 2 of 2" role="img" onclick="openModal('image2')">
+					<img src="imgs/01ConvoShow02.png" alt="Additional Image for guided conversation" class="image-item" id="image2">
+				</div>
+				
+			</div>
+					
+			
+			
+			<!-- Placeholder for detailed text with visit project button -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+				
+			
+				<div class="button-placeholder">
+					<a href="guided-convo/story.html" target="_blank" class="project-button">Work in Action</a>
+				</div>
+				
+			</div>
+			 
+ 
+		</div>		
+    </section>
+<!--white beige section divider -->	
+<svg width="100%" height="100%" aria-hidden="true" viewBox="0 0 6250 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Divider-2" serif:id="Divider 2" x="0" y="-0" width="6250" height="208.333" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="-0" width="6250" height="208.333"/></clipPath><g clip-path="url(#_clip1)"><rect x="-0" y="-0" width="6250" height="208.333" style="fill:#f9f9f9;"/><path d="M-0,70.833l6250,90.087l-0,47.413l-6250,0l-0,-137.5Z" style="fill:#f5efe7;"/></g></svg>
+	
+
+    <!-- Section B active listening explainer -->
+    <section class="section-b">
+        <div class="project-category">
+            <div class="project-item">
+            <!-- Left Content: Main Image -->
+				<div class="project-image">
+						<img src="imgs/02ActiveMain.png" alt="Active Listening project demo.">
+				</div>
+				
+			<!-- Right Content: Project Title, Description, Role, and Tools -->
+				<div class="project-info">
+						<h2>Project Title</h2>
+						<p>Short description of the project goes here.Short description of the project goes here.Short description of the project goes here.</p>
+						<ul class="project-details">
+							<li class="role"><span>My Role:</span> Designer</li>
+							<li class="tools"><span>Tools Used: </span>Figma, Photoshop</li>
+						</ul>
+				</div>
+
+			</div>
+			
+			
+			<!-- Placeholder for detailed text -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+			</div>
+			
+			
+			<!--video section start -->
+			
+			<div class="video-container">
+						
+			  <video id="videoPlayer" controls>
+				<source src="videos/02Active.mp4" type="video/mp4" />
+				<track src="captions.vtt" kind="subtitles" srclang="en" label="English" default />
+				Your browser does not support the video tag.
+			  </video>
+
+			</div>
+			
+			<!-- video section end -->		
+			
+
+
         </div>
+    </section>
+<!--beige white section divider -->	
+<svg width="100%" height="100%" aria-hidden="true" viewBox="0 0 6250 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Divider-2" serif:id="Divider 2" x="0" y="-0" width="6250" height="208.333" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="-0" width="6250" height="208.333"/></clipPath><g clip-path="url(#_clip1)"><rect x="0" y="-0" width="6250" height="208.333" style="fill:#f5efe7;"/><path d="M6250,72.917l-6250,90.086l0,47.414l6250,-0l0,-137.5Z" style="fill:#f9f9f9;"/></g></svg>	
+	
+   <!-- Section A - baord game -->
+    <section class="section-a">
+        <div class="project-category">
+            <div class="project-item">
+			
+			
+			<!-- Left Content: Main Image -->
+			<div class="project-image">
+						<img src="imgs/03BoardMain.png" alt="Board game project demo.">
+			</div>			
+			
+			<!-- Right Content: Project Title, Description, Role, and Tools -->
+			<div class="project-info">
+						<h2>Project Title</h2>
+						<p>Short description of the project goes here.Short description of the project goes here.Short description of the project goes here.</p>
+						<ul class="project-details">
+							<li class="role"><span>My Role:</span> Designer</li>
+							<li class="tools"><span>Tools Used: </span>Figma, Photoshop</li>
+						</ul>
+				</div>
+					
+			
+			</div>
+			
+			
+			<!-- Placeholder for detailed text -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+			</div>
+			
+			
+			<!-- Additional Images -->
+			<div class="additional-images">
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 1 of 5" role="img" onclick="openModal('image3')">
+					<img src="imgs/03BoardShow01.png" alt="Additional Image for board game" class="image-item" id="image3">
 
-        <!-- Section Divider -->
-        <div class="divider"></div>
+				</div>
+				
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 2 of 5" role="img" onclick="openModal('image4')">
+					<img src="imgs/03BoardShow02.png" alt="Additional Image for board game" class="image-item" id="image4">
+				</div>
+			</div>
+			
+			
+			<!-- Placeholder for detailed text -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+			</div>
+			
+			
+			<!-- Additional Images -->
+			<div class="additional-images">
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 3 of 5" role="img" onclick="openModal('image5')">
+					<img src="imgs/03BoardShow03.png" alt="Additional Image for board game" class="image-item" id="image5">
+
+				</div>
+				
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 4 of 5" role="img" onclick="openModal('image6')">
+					<img src="imgs/03BoardShow04.png" alt="Additional Image for board game" class="image-item" id="image6">
+				</div>
+			</div>
+					
+					
+			<!-- Placeholder for detailed text -->
+			<div class="project-detail-text">
+				<p>Placeholder text for detailed explanation about the project. This section can expand as needed to provide additional context and information.</p>
+			</div>
+			
+			
+			<!-- Additional Images -->
+			<div class="additional-images">
+				<div class="image-placeholder" tabindex="0" aria-label="Guided conversation image showcase 5 of 5" role="img" onclick="openModal('image7')" onkeydown="handleKeyOpen(event, 'image7')">
+					<img src="imgs/03BoardShow05.png" alt="Additional Image for board game" class="image-item" id="image7">
+
+				</div>
+
+			</div>		
+			
+			
+ 
+		</div>		
     </section>
 
-    <!-- You can add more sections for additional projects -->
+
+<!-- Modal -->
+<div id="image-modal" class="modal" role="dialog" aria-hidden="true" onclick="closeModal()">
+    <img
+        id="modal-image"
+        class="modal-image"
+        alt=""
+        onclick="closeModal()"
+    >
+    <button
+        class="modal-close"
+        aria-label="Close modal"
+        onclick="closeModal()"
+        onkeydown="handleKeyClose(event)"
+    >×</button>
+</div>
+
+
+
+
+    <!-- Image Modal 
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img id="modal-image" class="modal-image" src="" alt="Enlarged image">
+    </div>
+-->
+
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact">
+		<div class="contact-content">
+			<h2>My Name</h2>
+			<div class="contact-buttons">
+				<a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-button linkedin">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="mailto:youremail@example.com" class="contact-button email">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
+			<p class="contact-description">A brief description about myself. This is just a placeholder for now.</p>
+		</div>
+	</section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 CarrieW Design. All rights reserved.</p>
+    </footer>
+	
+	
+	<!-- Go Back to Top Button -->
+    <button id="goTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i> <!-- Font Awesome arrow icon --></button>
+	
+	
 </body>
 </html>
