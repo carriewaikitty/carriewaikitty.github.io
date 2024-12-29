@@ -193,7 +193,7 @@ header nav a:hover::after {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 8rem 1rem 1rem;
+    padding: 6rem 1rem 0rem;
     background-color: #213555; /* Dark blue for hero section background */
     color: #F9f9f9; /* Off-white color for text to stand out */
     position: relative;
