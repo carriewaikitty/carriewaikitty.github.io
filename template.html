@@ -14,23 +14,22 @@
 	
 </head>
 <body>
-    <!-- Placeholder link to go back to the main index page -->
     <header>
-        <nav>
+        <nav aria-label="Main">
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
 				<li class="dropdown">
-                <a href="#">My Work <span class="arrow"><i class="fas fa-chevron-down"></i></span></a>
-				
-			<!--	&#x25BC;</span></a>   -->
-                <div class="dropdown-menu">
-                    <a href="a11y/">Accessibility</a>
-                    <a href="eLearning/">eLearning</a>
-                    <a href="design/">Digital Design</a>
-  
-                </div>
-            </li>
+					<a href="#" aria-expanded="false">My Work <span class="arrow"><i class="fas fa-chevron-down"></i></span></a>
+					
+				<!--	&#x25BC;</span></a>   -->
+					<ul class="dropdown-menu">
+						<li><a href="a11y/">Accessibility</a></li>
+						<li><a href="eLearning/">eLearning</a></li>
+						<li><a href="design/">Digital Design</a></li>
+					</ul> 
+               
+				</li>
             </ul>
         </nav>
     </header>
@@ -116,6 +115,23 @@
 				</div>
 			
 			<!-- video section end -->
+			
+			
+			<!-- for image carousel, no zoom in  -->
+			<div class="carousel" role="region" aria-label="Image Carousel">
+				<div class="carousel-images">
+					<img src="imgs/0201.png" alt="Image 1" class="carousel-image">
+					<img src="imgs/0202.png" alt="Image 2" class="carousel-image">
+					<img src="imgs/0203.png" alt="Image 3" class="carousel-image">
+					 <img src="imgs/0204.png" alt="Image 3" class="carousel-image">
+				</div>
+				<button class="prev" onclick="moveSlide(-1)" aria-label="Previous slide" role="button" tabindex="0">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+				<button class="next" onclick="moveSlide(1)" aria-label="Next slide" role="button" tabindex="0">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
 			 
  
 		</div>		
@@ -166,7 +182,7 @@
 				
 			
 				<div class="button-placeholder">
-					<a href="https://example.com" target="_blank" class="project-button">Visit Project</a>
+					<a href="https://example.com" target="_blank" class="project-button" rel="noopener" aria-label="Open live demo of Project XYZ in a new tab">Explore the Project</a>
 				</div>
 				
 			</div>		
@@ -205,18 +221,19 @@
 	<!-- Contact Section -->
 	<section id="contact" class="contact">
 		<div class="contact-content">
-			<h2>My Name</h2>
+			<h2>Carrie W.</h2>
 			<div class="contact-buttons">
-				<a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-button linkedin">
+				<a href="https://www.linkedin.com/in/cwlearningdesign/" target="_blank" class="contact-button linkedin">
 					<i class="fab fa-linkedin-in"></i>
 				</a>
-				<a href="mailto:youremail@example.com" class="contact-button email">
+				<a href="mailto:cwlearningdesign@gmail.com" class="contact-button email">
 					<i class="fas fa-envelope"></i>
 				</a>
 			</div>
-			<p class="contact-description">A brief description about myself. This is just a placeholder for now.</p>
+			<p class="contact-description">Hi, I'm Carrie – Experience Designer. I'm a creative professional with extensive experience crafting engaging designs, impactful eLearning solutions, and promoting accessibility and inclusion.</p>
 		</div>
 	</section>
+
 
 
 

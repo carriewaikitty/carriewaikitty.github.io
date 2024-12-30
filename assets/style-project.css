@@ -8,19 +8,24 @@
 
 
 /*Focus state*/
-header nav a:focus, .project-button:focus {
-    outline: 3px solid #FF3796;
+header nav a:focus-visible, .project-button:focus-visible {
+    outline: 3px solid #ffbf47;
     outline-offset: 4px;
 }
 
-.contact-button:focus {
-    outline: 3px solid #FF3796;
+.project-button:focus-visible {
+    outline: 3px solid #000000;
+    outline-offset: 4px;
+}
+
+.contact-button:focus-visible {
+    outline: 3px solid #dcffb7;
     outline-offset: 4px;
 }
 
 
 body {
-    font-family: Noto Sans, serif;
+    font-family: Noto Sans, sans-serif;
 	
 	/*font-family: Arial, sans-serif;  */
     margin: 0;
@@ -107,6 +112,15 @@ header nav a:hover::after {
 /* Dropdown Styles */
 .dropdown {
     position: relative;
+}
+
+.dropdown li {
+    text-decoration: none;
+    color: #213555;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.3rem 0;
+    transition: color 0.3s ease;
 }
 
 .dropdown .arrow i{
@@ -310,7 +324,7 @@ header nav a:hover::after {
 .project-info {
     flex: 1;
     text-align: left; /* Align text to the left */
-	max-width: 600px;
+	max-width: 680px;
 	
 	
 }
@@ -494,7 +508,7 @@ header nav a:hover::after {
     outline: none;
 }
 
-.modal-close:focus {
+.modal-close:focus-visible {
     outline: 2px solid #fff;
 }
 
@@ -520,6 +534,65 @@ video {
 
 
 
+/*styling for image carousel*/
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    overflow: hidden;
+		margin-right:auto;
+	margin-left:auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(35, 53, 85, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius:10px;
+	border: 2px solid #fff;
+}
+
+.carousel button:hover {
+    background-color: rgba(35, 53, 85, 1);
+}
+
+.carousel button.prev {
+    left: 1px;
+}
+
+.carousel button.next {
+    right: 1px;
+}
+
+/* Button Focus Styles */
+.carousel button:focus-visible {
+    outline: 3px solid #ffbf47;
+}
+
+.carousel button i {
+    font-size: 1.2rem;
+}
 
 
 
@@ -545,8 +618,8 @@ video {
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
-    background: url('imgs/test.jpg') no-repeat center center/cover; /* Background image */
-    color: #F9F9F9; /* Off-white color for text */
+    background: url('imgs/contact.png') no-repeat center center/cover; /* Background image */
+    color: #fff; /* Off-white color for text */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -562,7 +635,7 @@ video {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background: rgba(11, 25, 44, 0.9); /* Semi-transparent overlay */
     z-index: -1;
 }
 
@@ -584,34 +657,44 @@ video {
     display: flex;
     justify-content: center;
     align-items: center; /* Ensure the buttons stay vertically aligned */
-    gap: 1.5rem;
+    gap: 3rem;
     margin-bottom: 2rem;
     flex-wrap: wrap; /* Allow buttons to wrap in case of small screens */
 }
+
+.contact-buttons a {
+  text-decoration: none; /* Removes underline from the <a> element */
+}
+.contact-buttons a i {
+	text-decoration:none;
+}
+
+
 
 /* Circle Buttons */
 .contact-button {
     width: 50px;
     height: 50px;
-    background-color: #213555; /* Dark blue background for buttons */
-    color: #fff;
+    background-color: #b6fffa; /* Dark blue background for buttons */
+    color: #213555;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: background-color 0.3s;
 }
 
 .contact-button:hover {
-    background-color: #7FC7D9; /* Light blue on hover */
+    background-color: #3e5879; /* Light blue on hover */
+	color: #FFFFFF;
 }
 
 /* Description Paragraph */
 .contact-description {
     font-size: 1.2rem;
-    color: #D8C4B6; /* Beige color for the description */
-    max-width: 800px;
+    color: #ffffff; /* Beige color for the description */
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -631,6 +714,7 @@ video {
         font-size: 1rem;
     }
 }
+
 
 
 

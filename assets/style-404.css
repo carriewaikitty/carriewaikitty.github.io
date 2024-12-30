@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     min-height: 99vh; /* Ensures the page takes up at least the full height of the viewport */
 	
-	font-family: Noto Sans, serif;
+	font-family: Noto Sans, sans-serif;
 	
   /*  font-family: Arial, sans-serif;   */
     margin: 0;
