@@ -45,27 +45,44 @@ svg {
 
 
 
-/* Header Styling (Category Title) */
+/* Logo Container */
+.logo-container {
+    text-align: left; /* Centers the logo above the header */
+    padding: 1rem 2rem 0rem; /* Adds spacing around the logo */
+	background-color: #213555;
+	
+	
+}
+
+.logo-container img {
+    max-width: 60px; /* Adjust width to fit your design */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
 
 /* Header Styles */
 header {
     background-color: #213555; /* Original background color */
-    color: #ffffff; /* dark blue  text */
-    padding: 2rem 0; /* Retained padding 2rem is at the top*/
+    color: #f9f9f9; /* dark blue  text */
+    padding: 0rem 0 2rem; /* Retained padding 2rem is at the top*/
     position: relative; /* make it possible to place the circle on the top-right */
+
+	
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 3.5rem;
-    margin: 10;
+    gap: 3rem;
+    margin: 0;
 
 }
 
 header nav a {
-    color: #ffffff; /* dark blue text */
+    color: #f9f9f9; /* dark blue text */
     text-decoration: none;
     font-weight: 700; /* font weight---300 is light */
     font-size: 1.1rem;
@@ -75,7 +92,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #D8C4B6; /* beige on hover for better interaction */
+    color: #D8C4B6; /* dark pink on hover for better interaction */
    /* transform: scale(1.1); /* Slight scaling effect */
 }
 
@@ -83,11 +100,11 @@ header nav a:hover {
 header nav a::after {
     content: "";
     position: absolute;
-    top: -7px; /* Position it just above the link */
-    right: -7px; /* Position it to the right of the link */
+    top: -5px; /* Position it just above the link */
+    right: -5px; /* Position it to the right of the link */
     width: 7px; /* Size of the circle */
     height: 7px;
-    background-color: #D8C4B6; /* beige color for the circle */
+    background-color: #D8C4B6; /* dark pink color for the circle */
     border-radius: 50%; /* Makes it round */
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -116,7 +133,7 @@ header nav a:hover::after {
 
 .dropdown li {
     text-decoration: none;
-    color: #213555;
+    color: #f9f9f9;
     font-size: 1rem;
     font-weight: 600;
     padding: 0.3rem 0;
@@ -161,6 +178,9 @@ header nav a:hover::after {
     visibility: visible;
 }
 
+
+
+
 .dropdown-menu a {
     text-decoration: none;
     color: #213555;
@@ -175,15 +195,19 @@ header nav a:hover::after {
 	text-decoration: wavy underline #B51B75;
 }
 
+
+
+
+
 /* Responsive Dropdown */
 
 /* Responsive Dropdown */
 @media (max-width: 480px) {
     .dropdown-menu {
         position: absolute;
-        left: 50%;
+        left: -10%;
         transform: translateX(-50%) translateY(10px); /* Center align the dropdown */
-        min-width: 60%; /* Adjust width for smaller screens */
+        min-width: 70%; /* Adjust width for smaller screens */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         border-top: 3px solid #B51B75;
         border-radius: 5px;
@@ -193,6 +217,7 @@ header nav a:hover::after {
         gap: 0.3rem;
         visibility: hidden;
         opacity: 0;
+		
     }
 
     .dropdown:hover .dropdown-menu {
@@ -200,6 +225,16 @@ header nav a:hover::after {
         transform: translateX(-50%) translateY(0); /* Apply slide-up effect */
         visibility: visible;
     }
+	
+     header nav ul {
+        gap: 1.9rem; /* Reduce the gap between navigation items */
+    }
+	.logo-container img {
+		width: 60px;
+		height: auto;
+		
+	}
+
 }
 
 
