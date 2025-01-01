@@ -398,15 +398,15 @@ header nav a:hover::after {
 .project-detail-text {
 	
 	padding: 0rem 0rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0 auto; /* Center align the text block */
 	max-width:900px;
 	
 }
 
 .project-detail-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.3rem;
+    line-height: 1.8;
 }
 
 /* Additional Images */
@@ -494,7 +494,7 @@ header nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center; /* Ensure the buttons stay vertically aligned */
-    gap: 3rem;
+    gap: 2.5rem;
     margin-bottom: 2rem;
     flex-wrap: wrap; /* Allow buttons to wrap in case of small screens */
 }
@@ -530,7 +530,7 @@ header nav a:hover::after {
 .contact-description {
     font-size: 1.2rem;
     color: #ffffff; /* Beige color for the description */
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -547,7 +547,7 @@ header nav a:hover::after {
     }
 
     .contact-description {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 

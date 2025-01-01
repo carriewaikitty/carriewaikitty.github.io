@@ -271,7 +271,7 @@ header nav a:hover::after {
 
 .about-text {
     flex: 1;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .about-text h1 {
@@ -301,7 +301,15 @@ header nav a:hover::after {
    
 }
 
+
+.about-image {
+	max-width: 630px;
+	margin-left:3rem;
+
+}
+
 .about-image img {
+	
     width: 100%;
     height: auto;
     border-radius: 30px;
@@ -515,7 +523,7 @@ header nav a:hover::after {
     border-radius: 12px; /* Optional: rounds the corners of the image to match the card */
     object-fit: cover; /* Ensures the image fills the area, cropping if necessary */
     margin-bottom: 1.5rem; /* Adds space between the image and the text */
-
+    margin-top:-0.5rem;
 }
 
 
@@ -657,7 +665,7 @@ header nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center; /* Ensure the buttons stay vertically aligned */
-    gap: 3rem;
+    gap: 2.5rem;
     margin-bottom: 2rem;
     flex-wrap: wrap; /* Allow buttons to wrap in case of small screens */
 }
@@ -695,7 +703,7 @@ header nav a:hover::after {
 .contact-description {
     font-size: 1.2rem;
     color: #ffffff; /* Beige color for the description */
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -712,7 +720,7 @@ header nav a:hover::after {
     }
 
     .contact-description {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
