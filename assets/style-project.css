@@ -429,9 +429,24 @@ header nav a:hover::after {
 	
 }
 
+
+.project-detail-text h3 {
+	
+    font-size: 1.75rem;
+	font-weight:700;
+	padding-bottom: 0.5rem;
+	
+}
+
+.project-detail-text span {
+  /*  color: #D8C4B6; /* Add a colorful highlight for roles and tools */
+    font-weight: bold;
+}
+
 .project-detail-text p {
     font-size: 1.2rem;
     line-height: 1.6;
+	padding-bottom: 0.5rem;
 }
 
 /* Additional Images */
