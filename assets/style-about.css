@@ -271,10 +271,14 @@ header nav a:hover::after {
 .about-text p {
     font-size: 1.3rem;
     line-height: 1.8;
+	margin-bottom:2rem;
 }
    
 .about-image {
-    margin-top: 2rem; /* Add space between the text and the image */
+    margin-top: 5rem; /* Add space between the text and the image */
+	
+	margin-right:auto;
+	margin-left:auto;
 }
 
 .about-image img {
@@ -282,7 +286,7 @@ header nav a:hover::after {
     height: auto;
     border-radius: 30px;
     object-fit: cover;
-    box-shadow: -10px 20px 60px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(181, 27, 117, 0.2); /* Blended shadow with a hint of pink */
+  /*  box-shadow: -10px 20px 60px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(181, 27, 117, 0.2); /* Blended shadow with a hint of pink */
 }
 
 @media (max-width: 992px) {
@@ -362,87 +366,6 @@ header nav a:hover::after {
 
 
 
-
-
-/* Section A */
-.section-a {
-    background-color: #f9f9f9; /* Light grey background for Section A */
-    padding: 3rem 2rem;
-}
-
-
-
-/* Project Category Styles */
-.project-category {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem 0rem;
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-/* Project Item Container */
-.project-item {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: flex-start;
-	justify-content: space-between; /* Distribute content evenly with space in between */
-	max-width: 1280px;
-}
-
-
-/* Detailed Text Placeholder right below the project title and image */
-.project-detail-text {
-	
-	padding: 0rem 0rem 2rem;
-    font-size: 1.3rem;
-    margin: 0 auto; /* Center align the text block */
-	max-width:900px;
-	
-}
-
-.project-detail-text p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-}
-
-/* Additional Images */
-.additional-images {
-    display: flex;
-    margin: 0 auto; /* Center align the image block */
-	gap: 2rem;
-    justify-content: flex-start; /* Align to the left */
-    margin-bottom: 2rem;
-	max-width:1100px;
-}
-
-
-.additional-images .image-placeholder {
-   /* width: calc(50% - 0.5rem); /* Keep the width flexible */
-/*	aspect-ratio: 16 / 9; /* Adjust this ratio as needed */
-    overflow: hidden; /* Ensures content respects border-radius */
-    border-radius: 10px; /* Apply rounded corners */
-  
-	
-	    
-	/*comment out below if ohter image shows issues*/	
-	display: flex; /* Align content if needed */
-    align-items: center;
-    justify-content: center;
-	
-	
-}
-
-.additional-images .image-placeholder img {
-    width: 100%; /* Ensure image scales to container width */
-    height: auto; /* Maintain the image's natural aspect ratio */
-    object-fit: cover; /* Ensure the image fits within the container */
-    display: block; /* Remove extra space caused by inline elements */
-    transition: transform 0.3s ease; /* Add hover zoom-in effect */
-}
 
 
 
