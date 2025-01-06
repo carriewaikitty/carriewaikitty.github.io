@@ -1,4 +1,4 @@
-# Carrie Wang's Design Portfolio
+# Carrie's Design Portfolio
 
 Welcome to my design portfolio, where I showcase my work in **eLearning, accessibility, visual design, and UX/UI design**. This portfolio reflects years of expertise and dedication to crafting user-centered, accessible, and impactful designs.
 
@@ -14,7 +14,7 @@ Visit the live portfolio at [CWxDesign](https://www.cwxdesign.com).
 
 ## **Copyright and Terms of Use**
 
-© 2025 Carrie Wang. All rights reserved.  
+© 2025 CWxDesign. All rights reserved.  
 
 This portfolio, including its **design, content, and structure**, is the intellectual property of Carrie Wang. Unauthorized duplication, redistribution, or use of this portfolio as a template without explicit permission is **strictly prohibited**.  
 
