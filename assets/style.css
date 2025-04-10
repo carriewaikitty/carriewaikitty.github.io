@@ -471,7 +471,7 @@ header nav a:hover::after {
 /* Individual Project Card */
 .project-card {
     background-color: #F9F9F9; /* Off-white background for the project card */
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -485,13 +485,13 @@ header nav a:hover::after {
 /* Project Card Title */
 .project-card h3 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Project Card Description */
 .project-card p {
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     flex-grow: 1; /* Allows the description to expand and fill available space */
 }
 
@@ -523,8 +523,8 @@ header nav a:hover::after {
     height: auto; /* Maintains the aspect ratio */
     border-radius: 12px; /* Optional: rounds the corners of the image to match the card */
     object-fit: cover; /* Ensures the image fills the area, cropping if necessary */
-    margin-bottom: 1.5rem; /* Adds space between the image and the text */
-    margin-top:-0.5rem;
+    margin-bottom: 0.5rem; /* Adds space between the image and the text */
+    margin-top:-1rem;
 }
 
 
