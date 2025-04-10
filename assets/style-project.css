@@ -92,7 +92,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #D8C4B6; /* dark pink on hover for better interaction */
+    color: #FAA9C0; /* dark pink on hover for better interaction */
    /* transform: scale(1.1); /* Slight scaling effect */
 }
 
@@ -104,7 +104,7 @@ header nav a::after {
     right: -5px; /* Position it to the right of the link */
     width: 7px; /* Size of the circle */
     height: 7px;
-    background-color: #D8C4B6; /* dark pink color for the circle */
+    background-color: #FAA9C0; /* dark pink color for the circle */
     border-radius: 50%; /* Makes it round */
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -156,7 +156,7 @@ header nav a:hover::after {
     left: -15px;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid #D8C4B6;
+    border-top: 3px solid #FAA9C0;
     border-radius: 10px;
     opacity: 0;
     transform: translateY(10px);
