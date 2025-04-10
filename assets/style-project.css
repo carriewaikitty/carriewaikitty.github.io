@@ -504,7 +504,7 @@ header nav a:hover::after {
 /* Button Styling */
 .project-button {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     color: #ffffff; /* Text color */
     background-color: #B51B75; /* Button background color */
     text-decoration: none; /* Remove underline */

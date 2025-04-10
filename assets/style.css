@@ -500,7 +500,7 @@ header nav a:hover::after {
     display: inline-block;
     background-color: #B51B75; /* Accent color for buttons */
     color: #FFFFFF; /* Off-white color for the button text */
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     text-decoration: none;
     border-radius: 30px; /* Rounded corners for the button */
     font-size: 1.2rem;
