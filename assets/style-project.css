@@ -76,7 +76,7 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 3.5rem;
     margin: 0;
 
 }
@@ -85,14 +85,14 @@ header nav a {
     color: #f9f9f9; /* dark blue text */
     text-decoration: none;
     font-weight: 700; /* font weight---300 is light */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     position: relative; /* For positioning the hover circle */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 
 }
 
 header nav a:hover {
-    color: #FAA9C0; /* dark pink on hover for better interaction */
+    color: #FAA9C0; /* light pink on hover for better interaction */
    /* transform: scale(1.1); /* Slight scaling effect */
 }
 
@@ -134,9 +134,9 @@ header nav a:hover::after {
 .dropdown li {
     text-decoration: none;
     color: #f9f9f9;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     transition: color 0.3s ease;
 }
 
@@ -184,9 +184,9 @@ header nav a:hover::after {
 .dropdown-menu a {
     text-decoration: none;
     color: #213555;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     transition: color 0.3s ease;
 }
 
@@ -207,18 +207,27 @@ header nav a:hover::after {
         position: absolute;
         left: -10%;
         transform: translateX(-50%) translateY(10px); /* Center align the dropdown */
-        min-width: 70%; /* Adjust width for smaller screens */
+        min-width: 150px; /* Adjust width for smaller screens */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-        border-top: 3px solid #B51B75;
+        border-top: 3px solid #FAA9C0;
         border-radius: 5px;
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        gap: 0.3rem;
+        gap: 0.2rem;
         visibility: hidden;
         opacity: 0;
 		
     }
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #213555;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    transition: color 0.3s ease;
+}
 
     .dropdown:hover .dropdown-menu {
         opacity: 1;
@@ -227,8 +236,14 @@ header nav a:hover::after {
     }
 	
      header nav ul {
-        gap: 1.9rem; /* Reduce the gap between navigation items */
+        gap: 2.5rem; /* Reduce the gap between navigation items */
     }
+	
+     header nav a {
+       font-size: 1.1rem;
+    }
+	
+	
 	.logo-container img {
 		width: 60px;
 		height: auto;
@@ -509,7 +524,7 @@ header nav a:hover::after {
     background-color: #B51B75; /* Button background color */
     text-decoration: none; /* Remove underline */
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 30px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Hover effect */
 }
