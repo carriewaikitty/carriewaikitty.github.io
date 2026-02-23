@@ -14,7 +14,7 @@ Visit the live portfolio at [CWxDesign](https://www.cwxdesign.com).
 
 ## **Copyright and Terms of Use**
 
-© 2025 CWxDesign. All rights reserved.  
+© 2025-2026 CWxDesign. All rights reserved.  
 
 This portfolio, including its **design, content, and structure**, is the intellectual property of Carrie Wang. Unauthorized duplication, redistribution, or use of this portfolio as a template without explicit permission is **strictly prohibited**.  
 
