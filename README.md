@@ -12,7 +12,7 @@ This portfolio demonstrates my approach to design, featuring projects across:
 
 Visit the live portfolio at [CWxDesign](https://www.cwxdesign.com).
 
-## **Copyright andtTerms of use**
+## **Copyright and terms of use**
 
 © 2025-2026 CWxDesign. All rights reserved.  
 
