@@ -1,8 +1,8 @@
-# Carrie's Design Portfolio
+# Carrie's design portfolio
 
 Welcome to my design portfolio, where I showcase my work in **eLearning, accessibility, visual design, and UX/UI design**. This portfolio reflects years of expertise and dedication to crafting user-centered, accessible, and impactful designs.
 
-## **About the Portfolio**
+## **About the portfolio**
 
 This portfolio demonstrates my approach to design, featuring projects across:
 - **Accessibility**: Inclusive digital experiences, including accessibility guidelines and button systems.
@@ -12,17 +12,17 @@ This portfolio demonstrates my approach to design, featuring projects across:
 
 Visit the live portfolio at [CWxDesign](https://www.cwxdesign.com).
 
-## **Copyright and Terms of Use**
+## **Copyright andtTerms of use**
 
 © 2025-2026 CWxDesign. All rights reserved.  
 
 This portfolio, including its **design, content, and structure**, is the intellectual property of Carrie Wang. Unauthorized duplication, redistribution, or use of this portfolio as a template without explicit permission is **strictly prohibited**.  
 
-### **What is Not Allowed**:
+### **What is not allowed**:
 1. Copying this portfolio (including code, content, or design) and presenting it as your own.
 2. Using the portfolio as a template without **significant changes** or without explicit written consent.
 
-### **What is Allowed**:
+### **What is allowed**:
 1. Using the repository for **personal learning purposes** (e.g., to study HTML, CSS, or JavaScript).
 2. Referencing the code with proper attribution: This project is inspired by the work of Carrie Wang. Original portfolio: https: https://github.com/carriewaikitty/carriewaikitty.github.io/
 
@@ -30,7 +30,7 @@ This portfolio, including its **design, content, and structure**, is the intelle
 For inquiries about licensing or permissions, please contact me via the [Contact section on my portfolio - at the bottom of the page](https://www.cwxdesign.com).
 
 
-## **Technologies Used**
+## **Technologies used**
 
 - **HTML/CSS**: Structuring and styling the portfolio.
 - **JavaScript**: For interactive elements.
